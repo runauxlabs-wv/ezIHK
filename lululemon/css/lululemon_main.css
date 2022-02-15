@@ -6,10 +6,10 @@
 /* fontawesome */
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
 /* 구글아이콘 */
-@import url('/lululemon/lib/slick-1.8.1/slick/slick.css');
-@import url('/lululemon/lib/slick-1.8.1/slick/slick-theme.css');
+@import url('/portfolio/lululemon/lib/slick-1.8.1/slick/slick.css');
+@import url('/portfolio/lululemon/lib/slick-1.8.1/slick/slick-theme.css');
 /* slick css */
-@import url('/lululemon/css/IE_lululemon.css');
+@import url('/portfolio/lululemon/css/IE_lululemon.css');
 /* IE cross browsing */
 
 
@@ -120,7 +120,7 @@ h1 {
     border: 0;
 }
 .brandStory {
-    background: url(/lululemon/img/main/main_1_halftone.jpg) no-repeat;
+    background: url(/portfolio/lululemon/img/main/main_1_halftone.jpg) no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -182,7 +182,7 @@ h2::after {
 }
 .sec {
     width: 100%;
-    background: url(/lululemon/img/main/sec2_33.jpg) no-repeat;
+    background: url(/portfolio/lululemon/img/main/sec2_33.jpg) no-repeat;
     background-size: cover;
 }
 .sec > .tech {
@@ -249,27 +249,27 @@ h2::after {
     position: relative;
 }
 .news > .inner > .banner > .img_ba > .baWrap .ba1 {
-    background: url(/lululemon/img/news/photo-1627483297886-49710ae1fc22.jpg) no-repeat;
+    background: url(/portfolio/lululemon/img/news/photo-1627483297886-49710ae1fc22.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .news > .inner > .banner > .img_ba > .baWrap .ba2 {
-    background: url(/lululemon/img/news/photo-1612685179841-3965cf0c3f70.jpg) no-repeat;
+    background: url(/portfolio/lululemon/img/news/photo-1612685179841-3965cf0c3f70.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .news > .inner > .banner > .img_ba > .baWrap .ba3 {
-    background: url(/lululemon/img/news/9ed7de5c9fd01a9b561c1bb71b95061ca0337926-1600x160022.jpg) no-repeat;
+    background: url(/portfolio/lululemon/img/news/9ed7de5c9fd01a9b561c1bb71b95061ca0337926-1600x160022.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .news > .inner > .banner > .img_ba > .baWrap .ba4 {
-    background: url(/lululemon/img/news/photo-1552083375-1447ce886485.jpg) no-repeat;
+    background: url(/portfolio/lululemon/img/news/photo-1552083375-1447ce886485.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .news > .inner > .banner > .img_ba > .baWrap .ba5 {
-    background: url(/lululemon/img/news/LikeNew_MediaHubJuneMega2.png) no-repeat;
+    background: url(/portfolio/lululemon/img/news/LikeNew_MediaHubJuneMega2.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -372,7 +372,7 @@ h2::after {
     left: 96px;
 }
 .text_ba .plus_icon {
-    background: url(/lululemon/img/icon/plus2.png);
+    background: url(/portfolio/lululemon/img/icon/plus2.png);
     width: 26px;
     height: 26px;
     background-size: cover;
@@ -432,7 +432,7 @@ h2::after {
 }
 .career {
     height: 100vh;
-    background: url(/lululemon/img/main/career.png);
+    background: url(/portfolio/lululemon/img/main/career.png);
     background-size: cover;
 }
 .career_txt {

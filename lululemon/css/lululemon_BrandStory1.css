@@ -6,10 +6,10 @@
 /* fontawesome */
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
 /* 구글아이콘 */
-@import url('/lululemon/lib/slick-1.8.1/slick/slick.css');
-@import url('/lululemon/lib/slick-1.8.1/slick/slick-theme.css');
+@import url('/portfolio/lululemon/lib/slick-1.8.1/slick/slick.css');
+@import url('/portfolio/lululemon/lib/slick-1.8.1/slick/slick-theme.css');
 /* slick css */
-@import url('/lululemon/css/IE_lululemon.css');
+@import url('/portfolio/lululemon/css/IE_lululemon.css');
 /* IE cross browsing */
 
 
@@ -116,7 +116,7 @@ header .logo {
 .cateBanner {
     width: 100%;
     height: 845px;
-    background: url(/lululemon/img/brandstory/KR_brandstory_hero.jpg) no-repeat;
+    background: url(/portfolio/lululemon/img/brandstory/KR_brandstory_hero.jpg) no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -221,7 +221,7 @@ header .logo {
 .ourStory .ourStory_img {
     width: 750px;
     height: 415px;
-    background: url(/lululemon/img/brandstory/10.1.1_History_banner.jpg) no-repeat;
+    background: url(/portfolio/lululemon/img/brandstory/10.1.1_History_banner.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -245,7 +245,7 @@ header .logo {
 .OurPurpose_Vision {
     width: 100%;
     height: 100vh;
-    background: url(/lululemon/img/brandstory/photo-1593810451137-5dc55105dace.jpg) no-repeat;
+    background: url(/portfolio/lululemon/img/brandstory/photo-1593810451137-5dc55105dace.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -274,7 +274,7 @@ header .logo {
 .lulu_img {
     width: 205px;
     height: 65px;
-    background: url(/lululemon/img/brandstory/lulu_img.png) no-repeat;
+    background: url(/portfolio/lululemon/img/brandstory/lulu_img.png) no-repeat;
     background-size: cover;
     image-rendering: -webkit-optimize-contrast;
     display: inline-block;
@@ -285,7 +285,7 @@ header .logo {
     height: 100vh;
 }
 .lotus_img {
-    background: url(/lululemon/img/brandstory/lotus2.png) no-repeat;
+    background: url(/portfolio/lululemon/img/brandstory/lotus2.png) no-repeat;
     background-size: contain;
     background-position: center;
     width: 815px;
@@ -315,7 +315,7 @@ header .logo {
     content: "";
     width: 30px;
     height: 30px;
-    background: url(/lululemon/img/main/lululemon_red.png) no-repeat;
+    background: url(/portfolio/lululemon/img/main/lululemon_red.png) no-repeat;
     background-size: cover;
     image-rendering: -webkit-optimize-contrast;
     position: absolute;
@@ -392,14 +392,14 @@ header .logo {
 .socialImpact_wrap > .socialImpact_img1 {
     width: 705px;
     height: 705px;
-    background: url(/lululemon/img/brandstory/KR_social_impact_hero.webp) no-repeat;
+    background: url(/portfolio/lululemon/img/brandstory/KR_social_impact_hero.webp) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .socialImpact_wrap > .socialImpact_img2 {
     width: 735px;
     height: 357px;
-    background: url(/lululemon/img/brandstory/HtB\ header\ hero.webp) no-repeat;
+    background: url(/portfolio/lululemon/img/brandstory/HtB\ header\ hero.webp) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -430,11 +430,11 @@ header .logo {
     padding: 50px 0;
 }
 .hereToBe_img1 {
-    background: url(/lululemon/img/brandstory/NA_May2021_IDEA_Commitments_1_1_md_Masonry_D.webp) 50% 50% no-repeat;
+    background: url(/portfolio/lululemon/img/brandstory/NA_May2021_IDEA_Commitments_1_1_md_Masonry_D.webp) 50% 50% no-repeat;
     background-size: cover;
 }
 .hereToBe_img2 {
-    background: url(/lululemon/img/brandstory/NA_May2021_IDEA_Progress_1_1_md_Masonry_D.webp) 50% 50% no-repeat;
+    background: url(/portfolio/lululemon/img/brandstory/NA_May2021_IDEA_Progress_1_1_md_Masonry_D.webp) 50% 50% no-repeat;
     background-size: cover;
 }
 .socialImpact .text_wrap > p {
@@ -469,19 +469,19 @@ td {
     height: 135px;
 }
 .GirlsOpportunityAlliance {
-    background: url(/lululemon/img/brandstory/GOA_TTP_logos_combined_1.png) no-repeat;
+    background: url(/portfolio/lululemon/img/brandstory/GOA_TTP_logos_combined_1.png) no-repeat;
     background-position: center;
 }
 .TrevorProject {
-    background: url(/lululemon/img/brandstory/GOA_TTP_logos_combined_2.png) no-repeat;
+    background: url(/portfolio/lululemon/img/brandstory/GOA_TTP_logos_combined_2.png) no-repeat;
     background-position: center;
 }
 .PeaceOnPurpose {
-    background: url(/lululemon/img/brandstory/POP-logo\ 1.png) no-repeat;
+    background: url(/portfolio/lululemon/img/brandstory/POP-logo\ 1.png) no-repeat;
     background-position: center;
 }
 .NaMi {
-    background: url(/lululemon/img/brandstory/NAMI_logo_resized_4.png) no-repeat;
+    background: url(/portfolio/lululemon/img/brandstory/NAMI_logo_resized_4.png) no-repeat;
     background-position: center;
 }
 table .tableText {

@@ -6,7 +6,7 @@
 /* fontawesome */
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
 /* 구글아이콘 */
-@import url('/lululemon/css/IE_lululemon.css');
+@import url('/portfolio/lululemon/css/IE_lululemon.css');
 /* IE cross browsing */
 
 * {
@@ -113,7 +113,7 @@ header .logo {
 .cateBanner {
     width: 100%;
     height: 845px;
-    background: url(/lululemon/img/news/Footer_QualityPromise_hero.jpg) no-repeat;
+    background: url(/portfolio/lululemon/img/news/Footer_QualityPromise_hero.jpg) no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -167,49 +167,49 @@ header .logo {
     overflow: hidden;
 }
 .newsWrap .card1 {
-    background: url(/lululemon/img/news/photo-1627483297886-49710ae1fc22.jpg) no-repeat;
+    background: url(/portfolio/lululemon/img/news/photo-1627483297886-49710ae1fc22.jpg) no-repeat;
     background-size: cover;
     background-position: 0% 10%;
     grid-column-start: 1;
     grid-column-end: 7;
 }
 .newsWrap .card2 {
-    background: url(/lululemon/img/news/photo-1612685179841-3965cf0c3f70.jpg) no-repeat;
+    background: url(/portfolio/lululemon/img/news/photo-1612685179841-3965cf0c3f70.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     grid-column-start: 1;
     grid-column-end: 4;
 }
 .newsWrap .card3 {
-    background: url(/lululemon/img/news/9ed7de5c9fd01a9b561c1bb71b95061ca0337926-1600x160022.jpg) no-repeat;
+    background: url(/portfolio/lululemon/img/news/9ed7de5c9fd01a9b561c1bb71b95061ca0337926-1600x160022.jpg) no-repeat;
     background-size: cover;
     background-position: 0% 33%;
     grid-column-start: 4;
     grid-column-end: 7;
 }
 .newsWrap .card4 {
-    background: url(/lululemon/img/news/photo-1552083375-1447ce886485.jpg) no-repeat;
+    background: url(/portfolio/lululemon/img/news/photo-1552083375-1447ce886485.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     grid-column-start: 1;
     grid-column-end: 3;
 }
 .newsWrap .card5 {
-    background: url(/lululemon/img/news/LikeNew_MediaHubJuneMega2.png) no-repeat;
+    background: url(/portfolio/lululemon/img/news/LikeNew_MediaHubJuneMega2.png) no-repeat;
     background-size: cover;
     background-position: center;
     grid-column-start: 3;
     grid-column-end: 5;
 }
 .newsWrap .card6 {
-    background: url(/lululemon/img/news/photo-1556761175-5973dc0f32e7.jpg) no-repeat;
+    background: url(/portfolio/lululemon/img/news/photo-1556761175-5973dc0f32e7.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     grid-column-start: 5;
     grid-column-end: 7;
 }
 .newsWrap .card7 {
-    background: url(/lululemon/img/news/photo-1543269865-cbf427effbad.jpg) no-repeat;
+    background: url(/portfolio/lululemon/img/news/photo-1543269865-cbf427effbad.jpg) no-repeat;
     background-size: cover;
     background-position: 0% 57%;
     grid-column-start: 1;
@@ -316,7 +316,7 @@ header .logo {
 }
 .newsLetter {
     height: 100vh;
-    background: url(/lululemon/img/news/unsplash_RYyr-k3Ysqg.jpg) no-repeat;
+    background: url(/portfolio/lululemon/img/news/unsplash_RYyr-k3Ysqg.jpg) no-repeat;
     background-size: cover;
 }
 .newsLetter .textWrap {
