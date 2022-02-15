@@ -1,0 +1,315 @@
+body {
+    overflow-x: hidden;
+    min-width: 100%;
+}
+.inner {
+    width: 95%;
+}
+nav {
+    width: 100%;
+}
+nav > .navWrap {
+    width: 100%;
+    height: 100%;
+    float: none;
+    top: 0;
+    transform: none;
+    padding: 0;
+}
+nav > .close {
+    height: 70px;
+    float: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-left: 0;
+}
+.closeBt {
+    position: absolute;
+    right: 30px;
+    top: 35px;
+}
+nav > .navWrap > .gnb > li::after {
+    content: none;
+}
+nav > .navWrap > .gnb > li {
+    padding-left: 0;
+    text-align: center;
+}
+nav > .navWrap > .gnb > li > a {
+    padding: 30px 0;
+    display: block;
+}
+nav > .navWrap > .gnb > li > a.on {
+    border-top: 1px solid #efefef;
+    border-bottom: 2px solid #EE2D23;
+    border-right: 1px solid #fff;
+    background: #fff;
+}
+nav > .navWrap > .gnb {
+    width: 180px;
+    height: 100vh;
+    float: left;
+    padding: 145px 0 0 0;
+    position: relative;
+    background: #f7f7f78c;
+}
+nav > .navWrap > .gnb::after {
+    content: "";
+    width: 1px;
+    height: 100vh;
+    background: #efefef;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+nav > .navWrap > .gnb > li {
+    width: 100%;
+}
+nav > .navWrap > .subgnb {
+    float: right;
+    width: calc(100% - 180px);
+    height: 100%;
+    position: relative;
+}
+nav > .navWrap > .subgnb > li {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: all 0.5s;
+    padding: 167px 0 0 50px;
+    text-align: left;
+}
+nav > .navWrap > .subgnb > li.on {
+    transform: translateX(0);
+    transition: all 0.5s;
+}
+.subgnb > li > ul > li {
+    width: auto;
+}
+.subgnb .sub {
+    display: none;
+    margin: 10px 0 0 0;
+}
+.section1 .textWrap::after {
+    font-size: 180px;
+    top: -40%;
+}
+.section1 .textWrap h1 {
+    font-size: 65px;
+}
+.section1 .textWrap span {
+    font-size: 50px;
+}
+.section1 .textWrap > p {
+    font-size: 16px;
+}
+.wordWrap {
+    padding-bottom: 9%;
+}
+.boxWrap {
+    width: 100%;
+    top: -24%;
+}
+.boxWrap > div {
+    width: 100%;
+    height: 180px;
+    padding: 20px 20px;
+}
+.boxWrap .info, .boxWrap .notice {
+    float: none;
+}
+.boxWrap .boxTitle {
+    padding-bottom: 30px;
+    font-size: 22px;
+}
+.section2 .inner {
+    padding: 186px 0;
+}
+.ti {
+    font-size: 26px;
+}
+h2 {
+    font-size: 40px;
+}
+.section2 .col {
+    float: right;
+    width: 40%;
+    padding: 0;
+}
+.section2 .col2 {
+    margin-top: 0;
+}
+.section2 .textWrap {
+    width: 60%;
+    padding-right: 0;
+    transform: none;
+    top: 0;
+}
+.col1 > .tabButton {
+    margin-right: 0;
+}
+.tabButton {
+    width: 100%;
+    height: 137px;
+    padding: 36px 0;
+}
+.tabButton p {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.tabButton p::after {
+    width: 20px;
+    height: 9px;
+    top: -18px;
+}
+.section3 .textWrap {
+    text-align: center;
+    float: none;
+    top: 10%;
+}
+.section3 .textWrap > .titleWrap {
+    padding-bottom: 0;
+}
+.section3 .textWrap > p {
+    padding: 0 30px;
+    word-break: keep-all;
+}
+.section3 .textWrap > p br {
+    display: none;   
+}
+.section3 .textWrap .moreView, .slideBox .moreView,
+.section4 .textWrap .moreView {
+    padding-top: 15px;
+}
+.section3 .slideBox, .section3 .slick-slide {
+    width: 250px;
+}
+.section3 .stampSlideWrap {
+    top: auto;
+    left: auto;
+    bottom: 70px;
+    transform: none;
+}
+.section3 .slideBox > .slideTitle {
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+.section3 .slideBox, .section3 .slick-slide {
+    padding: 15px;
+}
+.stamp {
+    width: 170px;
+    height: 140px;
+}
+.section3 .slideBox.on .stamp {
+    width: 120px;
+    height: 95px;
+}
+.section3 .slideBox > .line {
+    width: auto;
+}
+.section3 .slideBox.on .clickShow {
+    height: 150px;
+    word-break: inherit;
+    font-size: 14px;
+}
+.section4::before {
+    background-size: cover;
+    width: 250px;
+    height: 240px;
+}
+.section4::after {
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+.section4 .baWrap::before,
+.section4 .baWrap::after,
+.section4 > .inner > h2::before,
+.section4 .inner::before,
+.section4 > .inner > h2::after {
+    content: none;
+    display: none;
+}
+.section4 {
+    background-position: 0 25%;
+}
+.section4 h2 {
+    padding-top: 10%;
+}
+.section4 .ba {
+    height: auto;
+}
+.section4 .ba > .baText {
+    font-size: 14px;
+}
+.section4 .ba > .baText > span {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.section4 .textWrap {
+    padding-top: 0;
+    text-align: center;
+}
+.section4 .textWrap h2 {
+    text-align: center;
+    padding-top: 300px;
+}
+.section4 .textWrap, .map {
+    float: none;
+}
+.map {
+    width: 100%;
+    height: 350px;
+    margin-top: 5%;
+}
+footer {
+    font-size: 14px;
+    padding: 20px 0;
+}
+.footerlogo {
+    margin: 0;
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+    float: none;
+}
+footer .textWrap {
+    float: none;
+    text-align: center;
+}
+footer .textWrap > p:first-child {
+    padding-bottom: 5px;
+}
+.scroll {
+    position: absolute;
+    width: 100%;
+    top: 2%;
+    right: 0;
+    padding: 0 20px;
+}
+.scroll > div:first-of-type {
+    float: left;
+}
+.scroll > div:last-of-type {
+    float: right;
+}
+.hamberger {
+    display: inline-block;
+    background: url(/portfolio/woojeong/img/sort.svg) no-repeat center / cover;
+    width: 40px;
+    height: 42px;
+}
+.logo, .menuBt {
+    margin: 0;
+}
+.menuBt {
+    font-size: 0;
+}
+.scroll > ul, .scroll::after {
+    display: none;
+}

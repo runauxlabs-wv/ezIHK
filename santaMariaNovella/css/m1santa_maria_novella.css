@@ -1,0 +1,206 @@
+body {
+    min-width: 100%;
+    overflow-x: hidden;
+}
+video {
+    top: 35%;
+}
+.inner {
+    width: 95%;
+    margin: 0 auto;
+}
+.sec1 {
+    height: auto;
+}
+.sec1 .inner {
+    height: 100%;
+}
+.main {
+    height: 62vw;
+}
+.main .mainTxt {
+    position: relative;
+    top: 33%;
+    transform: translateY(-50%);
+    padding-top: 0;
+}
+.main .mainTxt > span {
+    width: 9.5vw;
+    height: 10vw;
+}
+.main .mainTxt > h1 {
+    font-size: 9vw;
+    height: auto;
+    line-height: 1;
+}
+.main .mainTxt > p {
+    font-size: 4vw;
+    letter-spacing: 1.4em;
+    transform: translateX(10px);
+}
+.sec2::before {
+    content: none;
+}
+.sec2 .ti_wrap {
+    padding-top: 50px;
+}
+h2, h3 {
+    font-size: 25px;
+}
+.sec2 .ti_wrap > h2, .detailTxt > h3 {
+    padding-bottom: 20px;
+}
+.sec2 .ti_wrap > p {
+    font-size: 14px;
+}
+.sec2 .ti_wrap > p:first-of-type {
+    display: none;
+}
+.detailWrap {
+    padding-top: 0;
+}
+.detailWrap > .detail1 {
+    padding-bottom: 50px;
+}
+.detailWrap > .detail1 > .img01 {
+    width: 50vw;
+    height: 63vw;
+    background-size: contain;
+    margin: 0 auto;
+    float: none;
+}
+.detailWrap > .detail1 > .detailTxt {
+    float: none;
+    text-align: center;
+    padding: 5% 0 0 0;
+}
+.detailWrap > .detail1 > .detailTxt > h3::after {
+    content: none;
+}
+.detailTxt p {
+    font-size: 14px;
+    padding: 0 10px;
+}
+.detailWrap > .detail2 .imgWrap {
+    float: none;
+    display: inline-block;
+    margin: 40px 0 0 7%;
+    left: 0;
+    padding-bottom: 25px;
+}
+.detailWrap > .detail2 .imgWrap2 {
+    display: none;
+}
+.detailWrap > .detail2 .imgWrap::before {
+    content: none;
+}
+.detail2{
+    text-align: center;
+}
+.detailWrap > .detail2 .imgWrap .img02 {
+    width: 200px;
+    height: 220px;
+    background-size: contain;
+}
+.detailWrap > .detail2 .imgWrap .img03 {
+    width: 75vw;
+    height: 54vw;
+    background-size: contain;
+    left: -25px;
+}
+.detailWrap > .detail2 > .detailTxt {
+    text-align: center;
+    float: none;
+    padding-top: 5%;
+    padding-right: 0;
+}
+.detailTxt br {
+    display: none;
+}
+.detailWrap > .detail2 > .detailTxt p {
+    padding: 0;
+    word-break: keep-all;
+}
+.detailWrap > .detail3 {
+    height: auto;
+    padding: 30px 0;
+}
+.detailWrap > .detail3 .img04 {
+    width: 47vw;
+    height: 40vw;
+    position: static;
+    float: none;
+    margin: 50px auto 0;
+    background-size: contain;
+}
+.detailWrap > .detail3 > .detailTxt {
+    float: none;
+    width: auto;
+    padding-top: 5%;
+}
+.sec3 {
+    height: 178px;
+}
+.history {
+    padding: 10px 0;
+}
+.history .sec3Logo {
+    width: 25px;
+    height: 35px;
+}
+.history .sec3Txt {
+    background-size: contain;
+    width: 200px;
+    height: 21px;
+    margin: 5px auto;
+}
+.history > h4 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.historyBt {
+    font-size: 14px;
+    width: 120px;
+    padding: 5px 0;
+}
+.sec4 {
+    height: auto;
+    padding-bottom: 50px;
+}
+.tabBox {
+    width: 100%;
+    padding: 30px 0;
+}
+.tabBox li {
+    width: calc((100% - 13px)/2);
+}
+.conBox {
+    padding: 0 0 50px 0;
+    text-align: center;
+}
+.conBox > .textWrap {
+    float: none;
+    padding-bottom: 30px;
+}
+.conBox > .textWrap p {
+    word-break: keep-all;
+    font-size: 14px;
+}
+.conBox > .textWrap > p:nth-of-type(2) {
+    padding: 30px 20px;
+}
+.conBox > .textWrap > p:nth-of-type(2) br {
+    display: none;
+}
+.conImg {
+    width: 285px;
+    height: 277px;
+    float: none;
+    margin: 0 auto;
+}
+.sec4::after {
+    content: none;
+}
+footer p {
+    font-size: 13px;
+}

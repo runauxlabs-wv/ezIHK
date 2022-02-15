@@ -1,0 +1,311 @@
+body {
+    min-width: 100%;
+}
+.inner {
+    width: 100%;
+    padding: 0 2.5%;
+}
+.header_top {
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    transform: translateX(100%);
+    border-bottom: hidden;
+    height: 60px;
+    padding: 12px 0;
+    background: #3b414d;
+}
+.header_top.on {
+    transform: translateX(0);
+    transition: all 0.5s;
+}
+.header_top .zoom {
+    display: none;
+}
+.header_top.on > .inner {
+    justify-content: flex-start;
+}
+.header_bottom {
+    background: #fff;
+    height: 60px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
+}
+.header_bottom > .inner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+}
+.gnb {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    transform: translateX(100%);
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+}
+.gnb.on {
+    transform: translateX(0);
+    transition: all 0.5s;
+}
+.gnbsub {
+    display: block;
+    justify-content: flex-start;
+    position: unset;
+    width: calc(100% - 157px);
+    min-width: 100px;
+    height: auto;
+}
+.gnbsub .inner {
+    display: block;
+}
+.gnbsub .sub {
+    width: calc(100% - 157px);
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    border-left: unset;
+    margin: 151px 0;
+    text-align: left;
+}
+.gnbsub::before {
+    width: 65%;
+    height: 457px;
+    right: -40px;
+    top: 22%;
+}
+.gnbsub .sub.on {
+    transform: translateX(0);
+    transition: all 0.5s;
+}
+.sub li a {
+    font-size: 18px;
+    display: block;
+    padding: 15px 50px;
+}
+.sub li a.on {
+    color: #003A5E;
+}
+.sub li a::before {
+    content: none;
+}
+.nav {
+    display: inline-block;
+    width: 157px;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #efefef;
+    padding-top: 140px;
+    justify-content: flex-start;
+}
+.nav > li {
+    margin: 0;
+    text-align: center;
+}
+.nav > li a.on {
+    background: #003A5E;
+    color: #fff;
+}
+.nav > li > a {
+    color: #000;
+    font-size: 20px;
+    padding: 30px 20px;
+    display: block;
+}
+.nav > li > a::after {
+    content: none;
+}
+.close {
+    display: block;
+    position: fixed;
+    right: 18px;
+    top: 12px;
+    color: #fff;
+    font-size: 33px;
+}
+.hamburger {
+    display: inline-block;
+    color: #000;
+    font-size: 24px;
+}
+.logo {
+    width: 166px;
+    height: 29px;
+    background: url(/portfolio/minwon_police/img/logo.png) no-repeat center / cover;
+}
+.main {
+    height: 580px;
+    padding-top: 60px;
+}
+.main::before {
+    height: 580px;
+}
+.main .inner {
+    display: flex;
+    justify-content: center;
+}
+.main_txt {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    text-align: center;
+    margin: 0 auto;
+}
+.main h1, .main p {
+    font-size: 50px;
+}
+.search {
+    width: 430px;
+}
+h2 {
+    font-size: 20px;
+}
+.frequentSurvice > .inner {
+    padding: 30px 2.5%;
+}
+.frequentSurvice .cir {
+    width: 100px;
+    height: 100px;
+}
+.frequentSurvice .menu {
+    width: 50px;
+    height: 50px;
+}
+.articleWrap > .txtWrap h3 {
+    text-align: center;
+}
+.tab {
+    overflow: auto;
+}
+.tab li {
+    margin-right: 0;
+}
+.tab span {
+    width: 130px;
+    font-size: 15px;
+}
+.contents > .conBox > li {
+    width: calc((100% - 40px)/3);
+    height: 135px;
+}
+.contents > .conBox > li:nth-child(6) ~ * {
+    display: none;
+}
+.contents > .conBox > li:nth-child(3), .contents > .conBox > li:nth-child(6) {
+    margin-right: 0;
+}
+.contents > .conBox > li:nth-child(4) {
+    margin-right: 20px;
+}  
+.contents > .conBox > li > a {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.articleWrap {
+    flex:none;
+    padding-bottom: 25px;
+}
+.article > .inner {
+    display: block;
+    overflow: hidden;
+}
+.articleWrap > .txtWrap {
+    display: block;
+    position: relative;
+}
+.moreView, .notice li {
+    font-size: 14px;
+}
+.moreView {
+    position: absolute;
+    right: 0px;
+    bottom: 15px;
+}
+.notice a {
+    display: inline-block;
+    width: 75%;
+}
+.notice span {
+    width: 25%;
+    display: inline-block;
+    text-align: end;
+}
+.notice li {
+    margin-bottom: 27px;
+}
+.call {
+    flex: none;
+    float: left;
+    width: 49%;
+}
+.slide {
+    flex: none;
+    float: right;
+    width: 49%;
+}
+.call .txtWrap, .slide .ba {
+    height: 46vw;
+}
+.qna > .inner, .article > .inner {
+    padding: 60px 2.5%;
+}
+.btns {
+    position: absolute;
+    bottom: 10px;
+}
+.bannerInfo {
+    clear: both;
+}
+.bannerInfo > .inner > .txtWrap {
+    padding: 65px 0 20px 0;
+}
+.bannerInfo > .inner > .txtWrap > p {
+    font-size: 16px;
+}
+.bannerInfo > .inner > .txtWrap > h3 {
+    font-size: 24px;
+}
+.info {
+    padding: 25px;
+}
+.info p:first-of-type::after {
+    width: 40px;
+    height: 40px;
+    top: -8px;
+}
+.info p:first-of-type {
+    font-size: 18px;
+    padding-bottom: 26px;
+}
+.info p:last-of-type {
+    font-size: 14px;
+    line-height: 1.6;
+    padding-bottom: 24px;
+    min-height: 136px;
+}
+.site {
+    padding: 30px 0;
+}
+.footer_link li a {
+    margin: 0;
+    font-size: 13px;
+}
+.site_go > .btWrap ul,
+.site_go button {
+    font-size: 13px;
+    width: 160px;
+}
+.footerBottom > p {
+    font-size: 13px;
+}
+.modal {
+    width: 70%;
+}

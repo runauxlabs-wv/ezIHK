@@ -1,0 +1,143 @@
+body {
+    min-width: 100%;
+    overflow-x: hidden;
+}
+video {
+    top: 35%;
+}
+.inner {
+    width: 95%;
+    margin: 0 auto;
+}
+.sec1 {
+    height: auto;
+}
+.sec1 .inner {
+    height: 100%;
+}
+.main {
+    height: 62vw;
+}
+.main .mainTxt {
+    position: relative;
+    top: 33%;
+    transform: translateY(-50%);
+    padding-top: 0;
+}
+.main .mainTxt > span {
+    width: 9.5vw;
+    height: 10vw;
+}
+.main .mainTxt > h1 {
+    font-size: 9vw;
+    height: auto;
+    line-height: 1;
+}
+.main .mainTxt > p {
+    font-size: 4vw;
+    letter-spacing: 1.4em;
+    transform: translateX(27px);
+}
+.sec2::before {
+    width: 500px;
+    height: 500px;
+}
+h2 {
+    font-size: 40px;
+}
+.detailWrap > .detail1 > .img01 {
+    width: 35%;
+    height: 42vw;
+    margin-left: 5%;
+    background-size: contain;
+}
+.detailTxt p {
+    font-size: 14px;
+}
+.detailWrap > .detail2 .imgWrap {
+    float: none;
+    display: inline-block;
+    margin-top: 40px;
+    left: 8%;
+}
+.detail2{
+    text-align: center;
+}
+.detailWrap > .detail2 .imgWrap .img02 {
+    width: 277px;
+    height: 300px;
+}
+.detailWrap > .detail2 .imgWrap .img03 {
+    width: 560px;
+    height: 390px;
+}
+.detailWrap > .detail2 > .detailTxt {
+    text-align: center;
+    float: none;
+    padding-top: 5%;
+    padding-right: 0;
+}
+.detailWrap > .detail2 > .detailTxt br {
+    display: none;
+}
+.detailWrap > .detail2 > .detailTxt p {
+    padding: 0 130px;
+    word-break: keep-all;
+}
+.detailWrap > .detail3 {
+    height: auto;
+    padding-top: 30px;
+}
+.detailWrap > .detail3 .img04 {
+    width: 47vw;
+    height: 40vw;
+    position: static;
+    float: left;
+    margin-top: 50px;
+    background-size: contain;
+}
+.detailWrap > .detail3 > .detailTxt {
+    width: auto;
+    padding-top: 20%;
+}
+.sec3 {
+    height: 400px;
+}
+.historyBt {
+    font-size: 14px;
+}
+.tabBox {
+    padding: 30px 0;
+}
+.conBox {
+    padding: 0 0 50px 0;
+    text-align: center;
+}
+.conBox > .textWrap {
+    float: none;
+    padding-bottom: 30px;
+}
+.conBox > .textWrap p {
+    word-break: keep-all;
+}
+.conBox > .textWrap > p:nth-of-type(2) {
+    padding: 30px 20px;
+}
+.conBox > .textWrap > p:nth-of-type(2) br {
+    display: none;
+}
+.conImg {
+    width: 314px;
+    height: 340px;
+    float: none;
+    margin: 0 auto;
+}
+.sec4 {
+    height: auto;
+}
+.sec4::after {
+    bottom: -30px;
+}
+footer p {
+    font-size: 13px;
+}

@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/* -------------is-ie----------------- */
+.is-ie .vegas-content-scrollable {
+    overflow: hidden;
+}
+.is-ie .section3 .slideBox > .clickShow,
+.is-ie .section3 .slideBox.on > .clickShow {
+    height: auto;
+}
+
+.is-ie nav > .navWrap > .gnb > li,
+.is-ie nav > .navWrap > .subgnb > li {
+    width: calc(99% / 4);
+}
+.is-ie .subgnb .sub {
+    background-color: rgba(247, 247, 247, 0.55);
+}
+.is-ie .close {
+    transform: translateX(100%);
+}
+.is-ie nav.on .close {
+    transform: translateX(0);
+}
+
+/* -------------ie9----------------- */
+.ie9 .logo,
+.ie9 .footerlogo,
+.ie9 .section4 .ba {
+    color: transparent;
+}
+.ie9 .section3 .slideBox > .downBt {
+    width: 24px;
+    height: 24px;
+    background: url(/portfolio/woojeong/img/arrow_down.svg) no-repeat;
+}
+
+/* -------------ie10----------------- */
+.ie10 .logo,
+.ie10 .footerlogo,
+.ie10 .section4 .ba {
+    color: transparent;
+}
+/* -------------ie11----------------- */
+@media screen and (max-width:1199px) {
+    .is-ie nav > .navWrap > .gnb > li {
+        width: 100%;
+    }
+    .is-ie .is-ie nav > .navWrap > .gnb > li,
+    .is-ie nav > .navWrap > .subgnb > li {
+        width: 100%;
+    }
+}
+@media screen and (max-width:767px) {}

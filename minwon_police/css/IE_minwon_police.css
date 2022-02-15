@@ -1,0 +1,411 @@
+@charset "UTF-8";
+/* -------------is-ie----------------- */
+
+.is-ie .call {
+    margin: 0 19px;
+}
+
+.is-ie .notice span {
+    width: 20%;
+    text-align: right;
+}
+
+.is-ie .info2 {
+    margin: 0 10px;
+}
+
+.is-ie .site .swiper-button-prev,
+.is-ie .site .swiper-button-next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.is-ie aside {
+    margin-right: 50px;
+}
+
+.is-ie .contents .aco.on {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+.is-ie .contents .context {
+    border-top: 0;
+}
+
+.is-ie .contents .aco {
+    display: block;
+}
+
+.is-ie .contents .aco>.titleWrap {
+    float: left;
+}
+
+.is-ie .contents .aco>.contentsBt {
+    float: right;
+}
+
+.is-ie .cirWrap>span {
+    margin-right: 25px;
+}
+
+.is-ie .cirWrap>span:last-child {
+    margin-right: auto;
+}
+
+/* -------------ie9----------------- */
+.ie9 .clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.ie9 .top_right li,
+.ie9 .top_right,
+.ie9 .zoom,
+.ie9 .header_bottom>.inner .logo,
+.ie9 .nav li,
+.ie9 .sub,
+.ie9 .frequentSurvice>.inner>.menuWrap a,
+.ie9 .tab li,
+.ie9 .contents>.conBox>li,
+.ie9 .articleWrap,
+.ie9 .call,
+.ie9 .slide,
+.ie9 .notice a,
+.ie9 .articleWrap>.txtWrap h3,
+.ie9 .info,
+.ie9 .footerTop>.footer_link,
+.ie9 aside,
+.ie9 .breadcrumbs li,
+.ie9 .subTab li {
+    float: left;
+}
+
+.ie9 .header_bottom>.inner .gnb,
+.ie9 .header_top .top_right_wrap,
+.ie9 .gnbsub .inner .subWrap,
+.ie9 .notice span,
+.ie9 .articleWrap>.txtWrap .moreView,
+.ie9 .info .bt,
+.ie9 .footerTop>.site_go,
+.ie9 .contents,
+.ie9 .breadcrumbs {
+    float: right;
+}
+
+.ie9 .top_right,
+.ie9 .zoom,
+.ie9 .header_bottom>.inner .logo,
+.ie9 .tabWrap .contents>ul>li>a,
+.ie9 .articleWrap>.txtWrap .moreView {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ie9 .header_top .top_right_wrap {
+    height: 100%;
+}
+
+.ie9 .header_bottom>.inner {
+    height: 82px;
+}
+
+.ie9 .sub {
+    width: 160px;
+}
+
+.ie9 .sub1 {
+    width: 180px;
+}
+
+.ie9 h2,
+.ie9 .frequentSurvice .cir {
+    display: block;
+}
+
+.ie9 .frequentSurvice>.inner a {
+    margin-right: 96px;
+}
+
+.ie9 .frequentSurvice>.inner a:last-of-type {
+    margin-right: 0;
+}
+
+.ie9 .frequentSurvice .menu {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ie9 .frequentSurvice a:hover .menu {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.ie9 .moreView::after {
+    vertical-align: middle;
+}
+
+.ie9 .contents>.on.conBox {
+    display: block;
+}
+
+.ie9 .tabWrap .contents>ul>li::after,
+.ie9 .tabWrap .contents>ul>li::before {
+    content: none;
+}
+
+.ie9 .tabWrap .contents>ul>li:hover {
+    border: 1px solid #003A5E;
+}
+
+.ie9 .articleWrap {
+    width: 567px;
+}
+
+.ie9 .call {
+    width: 267px;
+}
+
+.ie9 .slide {
+    width: 327px;
+}
+
+.ie9 .articleWrap>.txtWrap {
+    height: 51px;
+}
+
+.ie9 .call .txtWrap {
+    padding: 120px 0;
+}
+
+.ie9 .btns {
+    position: absolute;
+    bottom: 20px;
+}
+
+.ie9 .infoWrap .info {
+    width: calc((100% - 20px) / 3);
+    position: relative;
+}
+
+.ie9 .info .bt {
+    display: inline-block;
+}
+
+.ie9 .info .bt:hover {
+    margin-right: 10px;
+}
+
+.ie9 .site_go>.btWrap>button::after {
+    vertical-align: bottom;
+}
+
+.ie9 .breadcrumbs>li:first-child span {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/home.svg) no-repeat;
+}
+
+.ie9 aside {
+    width: 245px;
+}
+
+.ie9 .sec .contents {
+    width: 905px;
+}
+
+.ie9 .cirWrap>span {
+    display: block;
+    float: left;
+}
+
+.ie9 .address dd {
+    position: relative;
+}
+
+.ie9 .address label {
+    display: block;
+    position: absolute;
+    font-size: 14px;
+    top: 50px;
+    left: 10px;
+}
+
+.ie9 .address label:last-of-type {
+    top: 94px;
+}
+
+/* -------------ie10----------------- */
+.ie10 .frequentSurvice>.inner a {
+    margin-right: 96px;
+}
+
+.ie10 .frequentSurvice>.inner a:last-of-type {
+    margin-right: 0;
+}
+
+/* -------------ie11----------------- */
+
+
+@media screen and (max-width:1199px) {
+    .ie9 .close {
+        width: 33px;
+        height: 33px;
+        background: url(/portfolio/minwon_police/img/경찰민원아이콘/close.svg) no-repeat;
+    }
+
+    .ie9 .header_top .top_right_wrap {
+        float: none;
+    }
+
+    .ie9 .hamburger {
+        float: right;
+        position: relative;
+        top: 30px;
+    }
+
+    .ie9 .nav > li {
+        width: 100%;
+    }
+
+    .is-ie .close {
+        transform: translateX(200%);
+    }
+
+    .is-ie .header_top.on .close {
+        transform: translateX(0);
+    }
+
+    .is-ie .gnbsub {
+        position: static;
+    }
+
+    .ie11 .gnbsub {
+        position: relative;
+        top: 0;
+    }
+
+    .is-ie .gnbsub .sub {
+        border-left: 0;
+    }
+
+    .ie11 .gnbsub .sub {
+        width: 100%;
+    }
+    .is-ie .main .inner {
+        display: block;
+    }
+    .is-ie .main_txt {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .is-ie .frequentSurvice > .inner a {
+        width: calc(99% / 6);
+    }
+    .ie9 .frequentSurvice > .inner a,
+    .ie10 .frequentSurvice > .inner a,
+    .ie10 .frequentSurvice > .inner a:last-of-type {
+        margin-right: auto;
+    }
+    .is-ie .contents > .conBox > li {
+        width: calc((99% - 60px)/4);
+    }
+    .is-ie .articleWrap {
+        flex: none;
+        width: 40%;
+    }
+    .is-ie .call {
+        flex: none;
+        width: 25%;
+    }
+    .is-ie .slide {
+        width: calc(100% - 69%);
+    }
+    .ie9 .sec .contents {
+        width: 100%;
+    }
+    .is-ie .cirWrap > span:nth-child(3),
+    .is-ie .cirWrap > span:last-child {
+        margin-right: auto;
+    }
+}
+@media screen and (max-width:999px) {
+    .is-ie .contents > .conBox > li {
+        width: calc((99% - 40px)/3);
+    }
+    .is-ie .articleWrap {
+        width: 100%;
+    }
+    .is-ie .call {
+        width: 49%;
+        margin: 0;
+        float: left;
+    }
+    .is-ie .slide {
+        width: 49%;
+        float: right;
+    }
+
+}
+@media screen and (max-width:767px) {
+    .ie11 .gnbsub .sub {
+    padding-left: 20px;
+    }
+    .is-ie .frequentSurvice > .inner a {
+        width: calc(99% / 3);
+    }
+    .is-ie .contents > .conBox > li {
+        width: calc((99% - 20px)/2);
+    }
+    .is-ie .articleWrap,
+    .is-ie .call,
+    .is-ie .slide {
+        width: 100%;
+    }
+    .ie9 .call .txtWrap {
+        padding: 14vw 0;
+    }
+    .ie9 .infoWrap .info {
+        width: 100%;
+    }
+    .is-ie .info2 {
+        margin: 0;
+    }
+    .ie9 .breadcrumbs {
+        float: none;
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .is-ie .cirWrap > span:nth-child(3) {
+        margin-right: 25px;
+    }
+    .is-ie .cirWrap > span:nth-child(2),
+    .is-ie .cirWrap > span:nth-child(4),
+    .is-ie .cirWrap > span:last-child {
+        margin-right: auto;
+    }
+    .ie9 .footerTop>.footer_link,
+    .ie9 .footerTop>.site_go {
+        float: none;
+    }
+    .ie9 .subTab li, .ie10 .subTab li {
+        width: calc(100% / 5);
+    }
+    .is-ie .context table tr {
+        display: inherit;
+    }
+    .is-ie .context table th,
+    .is-ie .context table td {
+        width: auto;
+    }
+
+}

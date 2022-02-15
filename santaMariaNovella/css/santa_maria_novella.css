@@ -1,0 +1,441 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=PT+Serif&family=Scheherazade+New&display=swap');
+/* 구글폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* 구글아이콘 */
+* {
+    font-family: 'Noto Serif KR', serif;
+    /* font-family: 'PT Serif', serif;
+    font-family: 'Scheherazade New', serif; */
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+body {
+    min-width: 1280px;
+    overflow-x: hidden;
+    background: #000;
+}
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+.sec1 {
+    width: 100%;
+    background-color: #fff;
+    height: 100vh;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+}
+.main01 {
+    background: url(/portfolio/santaMariaNovella/img/mainBg.png) no-repeat center / cover;
+}
+.main02 {
+    background: url(/portfolio/santaMariaNovella/img/mainbg3.png) no-repeat center / cover;
+}
+.main .mainTxt {
+    padding-top: 75px;
+    text-align: center;
+}
+.main .mainTxt > span {
+    width: 140px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+.main01 .mainTxt > span {
+    background: url(/portfolio/santaMariaNovella/img/logo.png) no-repeat center / cover;
+}
+.main02 .mainTxt > span {
+    background: url(/portfolio/santaMariaNovella/img/logoG.png) no-repeat center / cover;
+}
+.main .mainTxt > h1 {
+    font-family: 'Scheherazade New', serif;
+    font-size: 135px;
+    height: 190px;
+}
+.main .mainTxt > p {
+    font-size: 80px;
+    letter-spacing: 71px;
+    padding: 0 17%;
+}
+.main01 .mainTxt > h1, .main01 .mainTxt > p {
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+.main02 .mainTxt > h1, .main02 .mainTxt > p {
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    color: #C6A667;
+}
+h2 {
+    font-size: 50px;
+}
+h3 {
+    font-size: 30px;
+}
+h2, h3 {
+    font-family: 'PT Serif', serif;
+}
+.sec2 {
+    position: relative;
+    background-color: #fff;
+}
+.sec2::before {
+    content: "";
+    width: 1000px;
+    height: 1000px;
+    background: url(/portfolio/santaMariaNovella/img/Rectangle18.svg) no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.05;
+    z-index: 10;
+}
+.sec2::after {
+    content: "";
+    width: 100%;
+    height: 580px;
+    background: url(/portfolio/santaMariaNovella/img/Vector4.png) no-repeat center / cover;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+}
+.sec2 .inner {
+    z-index: 100;
+    position: relative;
+}
+.sec2 .ti_wrap {
+    text-align: center;
+    padding-top: 100px;
+    line-height: 1.8;
+}
+.sec2 .ti_wrap > h2, .detailTxt > h3 {
+    color: #2F3E8B;
+    padding-bottom: 50px;
+}
+.detailTxt > h3 {
+    padding-bottom: 30px;
+}
+.sec2 .ti_wrap > p {
+    padding-bottom: 20px;
+}
+.detailWrap {
+    padding-top: 100px;
+}
+.detailWrap > .detail1 {
+    padding-bottom: 100px;
+}
+.detailWrap > .detail1 > .img01 {
+    width: 437px;
+    height: 548px;    
+    background: url(/portfolio/santaMariaNovella/img/detail41.png) no-repeat center / cover;
+    float: left;
+    margin-left: 12%;
+}
+.detailTxt {
+    line-height: 1.8;
+}
+.detailWrap > .detail1 > .detailTxt {
+    float: left;
+    padding: 14% 0 0 30px;
+    
+}
+.detailWrap > .detail1 > .detailTxt > h3 {
+    position: relative;
+}
+.detailWrap > .detail1 > .detailTxt > h3::after {
+    content: "";
+    width: 256px;
+    height: 1px;
+    background: #2F3E8B;
+    position: absolute;
+    left: -63px;
+    top: 44px;  
+}
+.detailWrap > .detail2 .imgWrap {
+    float: right;
+    /* border: 1px solid #C6A667; */
+    position: relative;
+    padding-bottom: 40px;
+}
+.detailWrap > .detail2 .imgWrap::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 1px solid #C6A667;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.detailWrap > .detail2 .imgWrap::before {
+    content: "";
+    width: 81px;
+    height: 86px;
+    background: url(/portfolio/santaMariaNovella/img/Group21.png) no-repeat center / cover;
+    position: absolute;
+    left: -20%;
+    top: 7%;
+}
+.detailWrap > .detail2 .imgWrap2 {
+    position: relative;
+    left: 40px;
+    top: -40px;
+    z-index: -1;
+}
+.detailWrap > .detail2 .imgWrap .img02 {
+    width: 300px;
+    height: 320px;
+    display: inline-block;
+}
+.detailWrap > .detail2 .imgWrap .img02-1 {
+    background: url(/portfolio/santaMariaNovella/img/Rectangle16.png) no-repeat center / cover;
+}
+.detailWrap > .detail2 .imgWrap .img02-2 {
+    background: url(/portfolio/santaMariaNovella/img/detail6.jpg) no-repeat center / cover;
+}
+.detailWrap > .detail2 .imgWrap .img03 {
+    width: 604px;
+    height: 425px;
+    background: url(/portfolio/santaMariaNovella/img/Rectangle19.png) no-repeat center / cover;
+    position: relative;
+    left: -40px;
+}
+.detailWrap > .detail2 > .detailTxt {
+    text-align: right;
+    float: right;
+    padding-top: 24%;
+    padding-right: 80px;
+}
+.detailWrap > .detail3 {
+    position: relative;
+    height: 454px;
+}
+.detailWrap > .detail3 .img04 {
+    width: 700px;
+    height: 590px;
+    background: url(/portfolio/santaMariaNovella/img/detail1.png) no-repeat center / cover;
+    position: absolute;
+    top: -30%;
+    left: -10%;
+}
+.detailWrap > .detail3 > .detailTxt {
+    float: right;
+    width: 50%;
+    text-align: center;
+    padding-top: 14%;
+}
+.sec3 {
+    height: 600px;
+}
+.sec3 .inner {
+    height: 100%;
+}
+video {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.history {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+}
+.history .sec3Logo {
+    display: block;
+    width: 65px;
+    height: 73px;
+    margin: 0 auto;
+    background: url(/portfolio/santaMariaNovella/img/logo1.png) no-repeat center / contain;
+}
+.history .sec3Txt {
+    display: block;
+    width: 387px;
+    height: 40px;
+    margin: 0 auto;
+    background: url(/portfolio/santaMariaNovella/img/SantaMariaNovellaB.png) no-repeat;
+    margin: 30px auto 20px;
+}
+.history > h4 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.historyBt {
+    display: inline-block;
+    width: 150px;
+    padding: 8px 0;
+    text-align: center;
+    color: #2F3E8B;
+    border: 1px solid #2F3E8B;
+    position: relative;
+}
+.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 9px;
+    background: url(/portfolio/santaMariaNovella/img/rightIcon.svg) no-repeat center / cover;
+    animation: motion 0.7s /* 속도 */
+               linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
+               infinite alternate; /* 무한 반복 */
+}
+@keyframes motion {
+	0% {margin-left: 5px;}
+	100% {margin-left: 10px;}
+}
+.sec4 {
+    height: 100vh;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.sec4 .inner {
+    height: 100%;
+}
+.sec4::after {
+    content: "FIRENZE 1221";
+    font-family: 'Scheherazade New', serif;
+    font-size: 9vw;
+    position: absolute;
+    left: 8%;
+    bottom: -53px;
+    letter-spacing: 3vw;
+    color: #C6A667;
+    opacity: 0.3;
+    line-height: 1;
+}
+.tabBox {
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.tabBox li {
+    display: inline-block;
+    width: calc((100% - 13px)/4);
+    font-size: 14px;
+    color: #2F3E8B;
+    border: 1px solid #2F3E8B;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 4px;
+}
+.tabBox li.on {
+    background-color: #2F3E8B;
+    color: #fff;
+    transition: all 0.3s;
+}
+.conBoxWrap {
+    height: 755px;
+    position: relative;
+}
+.conBox {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    padding-top: 50px;
+}
+.conBox.on {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.conBox > .textWrap {
+    line-height: 1.8;
+    float: left;
+}
+.conBox > .textWrap > h2 + p {
+    font-size: 14px;
+    color: #3c3c3c;
+}
+.conBox > .textWrap > p:nth-of-type(2) {
+    padding: 30px 0 50px 0;
+}
+.conBox > .textWrap > p:nth-of-type(3) {
+    padding-bottom: 30px;
+}
+.conImg {
+    width: 500px;
+    height: 578px;
+    float: right;
+}
+.conImg1 {
+    background: url(/portfolio/santaMariaNovella/img/타바코01.png) no-repeat center / contain;
+}
+.conImg2 {
+    background: url(/portfolio/santaMariaNovella/img/포푸리01.png) no-repeat center / contain;
+}
+.conImg3 {
+    background: url(/portfolio/santaMariaNovella/img/멜로그라노01.png) no-repeat center / contain;
+}
+.conImg4 {
+    background: url(/portfolio/santaMariaNovella/img/아쿠아델라레지나01.png) no-repeat center / contain;
+}
+.conImg5 {
+    background: url(/portfolio/santaMariaNovella/img/엔젤디피렌체01.png) no-repeat center / contain;
+}
+.conImg6 {
+    background: url(/portfolio/santaMariaNovella/img/로사가드니아01.png) no-repeat center / contain;
+}
+.conImg7 {
+    background: url(/portfolio/santaMariaNovella/img/프리지아01.png) no-repeat center / contain;
+}
+.conImg8 {
+    background: url(/portfolio/santaMariaNovella/img/로사노벨라01.png) no-repeat center / contain;
+}
+footer {
+    background: #2F3E8B;
+    padding: 20px 0;
+}
+footer p {
+    font-size: 14px;
+    text-align: center;
+    color: #adadad;
+}
+.top {
+    display: inline-block;
+    position: fixed;
+    right: 30px;
+    bottom: 80px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #2F3E8B;
+    text-align: center;
+    z-index: 200;
+}
+.top > .topIcon {
+    color: #fff;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ie9 .top > .topIcon {
+    width: 24px;
+    height: 24px;
+    background: url(/portfolio/santaMariaNovella/img/arrow_up.svg) no-repeat;
+}

@@ -1,0 +1,1080 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+/* 구글폰트 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+/* fontawesome */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* 구글아이콘 */
+@import url('/portfolio/minwon_police/lib/slick-1.8.1/slick/slick.css');
+@import url('/portfolio/minwon_police/lib/slick-1.8.1/slick/slick-theme.css');
+/* slick css */
+@import url('/portfolio/minwon_police/css/IE_minwon_police.css');
+/* IE cross browsing */
+
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+body {
+    min-width: 1280px;
+}
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.header_top {
+    border-bottom: 1px solid #012034;
+    background-color: #003A5E;
+}
+.header_top > .inner {
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header_top > .inner .top_right_wrap {
+    display: flex;
+    flex-direction: row;
+}
+.header_top .top_right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.top_right li {
+    padding-right: 10px;
+}
+.top_right li:nth-child(2) > a {
+    position: relative;
+}
+.top_right li:nth-child(2) > a::before {
+    width: 1px;
+    height: 10px;
+    background: #fff;
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 12px;
+}
+.top_right li:nth-child(2) > a::after {
+    width: 1px;
+    height: 10px;
+    background: #fff;
+    content: "";
+    position: absolute;
+    right: -6px;
+    top: 12px;
+}
+.top_right a {
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px;
+}
+.zoom {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    color: #fff;
+    align-items: center;
+    padding-left: 20px;
+}
+.zoom span:first-of-type {
+    padding: 5px;
+}
+.zoomTxt {
+    font-size: 14px;
+    color: #fff;
+    padding: 0 5px;
+    cursor: pointer;
+}
+.zoomIn {
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/zoomIn.png) no-repeat;
+}
+.zoomOut {
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/zoomOut.png) no-repeat;
+}
+header .header_bottom.on, header .header_bottom.active {
+    background: #fff;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
+}
+header .header_bottom.on .logo, 
+.header_bottom.active .logo {
+    background: url(/portfolio/minwon_police/img/logo.png) no-repeat center / cover;
+}
+header .header_bottom.on .nav a,
+header .header_bottom.active .nav a {
+    color: #000;
+}
+.header_bottom {
+    background: transparent;
+}
+.header_bottom > .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: block;
+    width: 182px;
+    height: 34px;
+    background: url(/portfolio/minwon_police/img/logofff.png) no-repeat;
+}
+.hamburger {
+    display: none;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav > li {
+    margin: 15px 35px;
+}
+.nav > li > a {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 5px;
+    position: relative;
+}
+.nav > li > a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    background-color: #003A5E;
+    opacity: 0;
+}
+.nav > li > a:hover::after {
+    left: 0;
+    width: 100%;
+    transition: all 0.3s;
+    opacity: 1;
+}
+.close {
+    display: none;
+}
+.gnbsub {
+    height: 420px;
+    display: none;
+    position: absolute;
+    top: 118px;
+    left: 0;
+    z-index: 100;
+    min-width: 1200px;
+    width: 100%;
+    background: #fff;
+    overflow-y: hidden;
+    border-top: 1px solid #efefef;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gnbsub::before {
+    content: "";
+    width: 50%;
+    height: 420px;
+    background: url(/portfolio/minwon_police/img/subBg.png) no-repeat center / contain;
+    opacity: 0.1;
+    position: absolute;
+    right: 0;
+    top: 18%;
+}
+.gnbsub .inner .subWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+/* .header_bottom.active .gnbsub {
+    height: 420px;
+    transition: height 0.5s;
+    border-top: 1px solid #efefef;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+} */
+.sub {
+    margin: 10px 0;
+    border-left: 1px solid #efefef;
+    min-width: 160px;
+    min-height: 400px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+}
+.sub1 {
+    width: 180px;
+}
+.sub6 {
+    border-right: 1px solid #efefef;
+}
+.sub li a {
+    position: relative;
+    color: rgb(71, 71, 71);
+}
+.sub li a:hover {
+    color: #003A5E;
+}
+.sub li a::before {
+    display: block;
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: #003A5E;
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+.sub li a:hover::before {
+    opacity: 1;
+}
+.main {
+    width: 100%;
+    height: 753px;
+    padding-top: 147px;
+    position: relative;
+}
+.main::before {
+    content: "";
+    width: 100%;
+    height: 753px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+}
+.main > .inner {
+    height: 100%;
+    position: relative;
+}
+.main_txt {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+.main h1, .main p {
+    font-size: 55px;
+    color: #fff;
+    font-weight: 400;
+}
+.search {
+    width: 390px;
+    position: relative;
+    margin-top: 60px;
+}
+.search > input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-style: none;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+input::placeholder {
+    color:#fff;
+}
+.search button {
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-style: none;
+    background-color: transparent;
+}
+.searchIcon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/search.svg) no-repeat;
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+}
+.frequentSurvice {
+    background-color: #EFEFEF;
+}
+h2 {
+    display: inline-block;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+    padding-bottom: 25px;
+}
+.frequentSurvice > .inner {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+.frequentSurvice > .inner > .menuWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.frequentSurvice > .inner a {
+    text-align: center;
+    color: #000;
+    display: block;
+}
+.frequentSurvice .cir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    background-color: #fff;
+    margin: 0 auto 10px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
+}
+.frequentSurvice .menu {
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+.frequentSurvice .menu1 {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/교통2.svg) no-repeat center;
+}
+.frequentSurvice .menu2 {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/경찰2.svg) no-repeat center;
+}
+.frequentSurvice .menu3 {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/국민신문고2.svg) no-repeat center;
+}
+.frequentSurvice .menu4 {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/생활안전2.svg) no-repeat center;
+}
+.frequentSurvice .menu5 {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/수사2.svg) no-repeat center;
+}
+.frequentSurvice .menu6 {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/경비2.svg) no-repeat center;
+}
+.frequentSurvice a:hover .menu {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+.frequentSurvice a:hover .cir {
+    background-color: #194d6e;
+    transition: all 0.2s ease-in-out;
+}
+.frequentSurvice a:hover .menu1 {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/교통3.svg) no-repeat center;
+}
+.frequentSurvice  a:hover .menu2 {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/경찰3.svg) no-repeat center;
+}
+.frequentSurvice  a:hover .menu3 {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/국민신문고3.svg) no-repeat center;
+}
+.frequentSurvice  a:hover .menu4 {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/생활안전3.svg) no-repeat center;
+}
+.frequentSurvice  a:hover .menu5 {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/수사3.svg) no-repeat center;
+}
+.frequentSurvice  a:hover .menu6 {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/경비3.svg) no-repeat center;
+}
+.qna {
+    position: relative;
+    overflow: hidden;
+}
+.qna::before {
+    content: "";
+    width: 29%;
+    height: 8%;
+    background: #003a5e;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    box-shadow: -190px 0px #32617e, -268px 0px #7f9cae;
+}
+.qna::after {
+    content: "";
+    width: 25%;
+    height: 2%;
+    background: #32617e;
+    position: absolute;
+    top: 0;
+    box-shadow: 70px 0px #003a5e, 166px 0px #7f9cae;
+}
+.qna > .inner {
+    padding: 100px 0;
+}
+.qna .txtWrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.qna .txtWrap .moreView {
+    right: 0;
+    bottom: 19px;
+    position: absolute;
+}
+.tab {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #efefef;
+}
+.tab li {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.tab span {
+    display: inline-block;
+    width: 150px;
+    padding: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+    position: relative;
+}
+.tab span::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    background-color: #003A5E;
+    opacity: 0;
+}
+.tab li.on {
+    border-bottom: 2px solid #003A5E;
+}
+.tab li.on span {
+    color: #003A5E;
+}
+.tab li:hover span::after {
+    left: 0;
+    width: 100%;
+    transition: all 0.3s;
+    opacity: 1;
+}
+.contents > .conBox {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    height: 364px;
+}
+.contents > .conBox.on {
+    display: flex;
+}
+.contents > .conBox > li {
+    width: calc((100% - 60px)/4);
+    height: 147px;
+    margin: 0 20px 20px 0;
+    border: 1px solid #efefef;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 4px 5px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.contents > .conBox > li:nth-child(4),
+.contents > .conBox > li:nth-child(8) {
+    margin-right: 0;
+}
+.contents > ul > li::before {
+    border-top: 1px solid #003A5E;
+    border-bottom: 1px solid #003A5E;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: "";
+    transform: scale3d(0,1,1);
+    transition: 0.5s;
+}
+.contents > ul > li::after {
+    border-left: 1px solid #003A5E;
+    border-right: 1px solid #003A5E;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: "";
+    transform: scale3d(1,0,1);
+    transition: 0.5s;
+}
+.contents > ul > li:hover::before , .contents > ul > li:hover::after {
+    transform: scale3d(1,1,1);
+} 
+.contents > ul > li > a {
+    display: inline-block;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.article h3 {
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.article > .inner {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 100px 0;
+}
+.articleWrap {
+    flex: 1 1 45%;
+}
+.articleWrap > .txtWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #efefef;
+}
+.moreView {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+.moreView::after {
+    display: inline-block;
+    content: "\e5cc";
+    font-family: 'Material Icons Outlined';
+    font-weight: normal;
+    font-size: 20px;
+}
+.notice {
+    padding: 20px 0;
+}
+.notice li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 22px;
+    color: rgb(76, 76, 76);
+}
+.notice li:last-child {
+    margin-bottom: 0;
+}
+.notice a {
+    display: inline-block;
+    width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    color: rgb(76, 76, 76);
+    padding-left: 20px;
+}
+.notice span {
+    width: 25%;
+    display: inline-block;
+    text-align: end;
+}
+.notice li a::before {
+    display: block;
+    content: "";
+    width: 2px;
+    height: 2px;
+    background: rgb(76, 76, 76);
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.call {
+    color: #000;
+    display: inline-block;
+    flex: 1 1 20%;
+}
+.call .txtWrap {
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #efefef;
+    text-align: center;
+}
+.call .txtWrap p:first-child {
+    font-size: 45px;
+    font-weight: 500;
+    color: #003A5E;
+    position: relative;
+
+}
+.call .txtWrap p:first-child span {
+    font-size: 14px;
+    color: #5C5C5C;
+}
+.call .txtWrap p:first-child::before {
+    content: "\f2a0";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 50px;
+    transform: rotate(324deg);
+    color: #003A5E;
+    display: inline-block;
+}
+.slide {
+    flex: 1 1 25%;
+    position: relative;
+}
+.slide .ba {
+    display: block;
+    width: 100%;
+    height: 340px;
+}
+.ba1 {
+    background: url(/portfolio/minwon_police/img/ba1.jpg) no-repeat center / cover;
+}
+.ba2 {
+    background: url(/portfolio/minwon_police/img/ba2.jpg) no-repeat center / cover;
+}
+.ba3 {
+    background: url(/portfolio/minwon_police/img/ba3.jpg) no-repeat center / cover;
+}
+.ba4 {
+    background: url(/portfolio/minwon_police/img/ba4.jpg) no-repeat center / cover;
+}
+.ba5 {
+    background: url(/portfolio/minwon_police/img/ba5.jpg) no-repeat center / cover;
+}
+.btns {
+    width: 135px;
+    height: 30px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.swiper-pagination {
+    color: rgba(255,255,255,0.8);
+    font-weight: 300;
+    font-size: 14px;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    transition: none;
+}
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 6px;
+    left: 17px;
+    color: rgba(255,255,255,0.8);
+    font-weight: 300;
+    width: auto;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.btns > .swiper-button-next {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/next.png) no-repeat center;
+    right: 18px;
+}
+.btns > .swiper-button-prev {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/prev.png) no-repeat center;
+    left: 64px;
+}
+.btns > .swiper-button-next,
+.btns > .swiper-button-prev {
+    width: 15px;
+    height: 10px;
+    margin: 0;
+    top: 9px;
+}
+.btns > button{
+    width: 8px;
+    height: 11px;
+    background-color: transparent;
+    border-style: none;
+    position: absolute;
+    right: 40px;
+    top: 9px;
+}
+.btns > button.start {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/start.png) no-repeat center / cover;
+    opacity: 0.8;
+}
+.btns > button.stop {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/stop.png) no-repeat center / cover;
+}
+.btns button.disabled {
+    display: none;
+}
+.bannerInfo {
+    background: url(/portfolio/minwon_police/img/unsplash__JBKdviweXI.png) 0px -235px repeat-x;
+}
+.bannerInfo > .inner > .txtWrap {
+    padding: 100px 0 20px 0;
+}
+.bannerInfo > .inner > .txtWrap > p {
+    font-size: 20px;
+    color: #fff;
+}
+.bannerInfo > .inner > .txtWrap > p > span {
+    font-style: italic;
+}
+.bannerInfo > .inner > .txtWrap > h3 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+}
+.infoWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+.info {
+    flex: 1 1 30%;
+    border: 1px solid #efefef;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 35px 50px;
+    display: flex;
+    flex-direction: column;
+}
+.info p:first-of-type {
+    font-size: 20px;
+    padding-bottom: 50px;
+    position: relative;
+}
+.info p:last-of-type {
+    padding-bottom: 40px;
+}
+.info .bt {
+    padding: 5px 30px 0 10px;
+    margin-right: 10px;
+    align-self: flex-end;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+.info .bt::after {
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: #000;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 3px;
+    right: -1px;
+}
+.info .bt:hover {
+    border-bottom: 1px solid #003A5E;
+}
+.info .bt:hover::after {
+    background-color: #003A5E;
+}
+.info .bt a {
+    font-size: 14px;
+    color: #000;
+}
+.info .bt:hover a {
+    color: #003A5E;
+}
+.info p:first-of-type::after {
+    content: "";
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    right: 0;
+    top: -12px;
+}
+.info1 p:first-of-type::after {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/인터넷민원.svg) no-repeat;
+}
+.info2 p:first-of-type::after {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/방문예약.svg) no-repeat;
+}
+.info3 p:first-of-type::after {
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/경찰관찾기.svg) no-repeat;
+}
+.site {
+    padding: 50px 0;
+}
+.site .inner {
+    position: relative;
+}
+.site h3 {
+    height: 1px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.site .siteSlide {
+    width: 92%;
+    margin: 0 auto;
+}
+.site .slick-slide {
+    margin: 0 10px;
+}
+.site .slideWrap .swiper-slide > a {
+    display: block;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    text-indent: -9999px;
+    border: 1px solid #efefef;
+}
+.site .slideWrap li.slide1 a{
+    background: url(/portfolio/minwon_police/img/site_banner_1.png)no-repeat center / contain;
+}
+.site .slideWrap li.slide2 a{
+    background: url(/portfolio/minwon_police/img/site_banner_2.png)no-repeat center / contain;
+}
+.site .slideWrap li.slide3 a{
+    background: url(/portfolio/minwon_police/img/site_banner_3.png)no-repeat center / contain;
+}
+.site .slideWrap li.slide4 a{
+    background: url(/portfolio/minwon_police/img/site_banner_4.png)no-repeat center / contain;
+}
+.site .slideWrap li.slide5 a{
+    background: url(/portfolio/minwon_police/img/site_banner_5.png)no-repeat center / contain;
+}
+.site .slideWrap li.slide6 a{
+    background: url(/portfolio/minwon_police/img/site_banner_6.png)no-repeat center / contain;
+}
+.site .slideWrap li.slide7 a{
+    background: url(/portfolio/minwon_police/img/site_banner_7.png)no-repeat center / contain;
+}
+.site .slideWrap li.slide8 a{
+    background: url(/portfolio/minwon_police/img/site_banner_8.png)no-repeat center / contain;
+}
+.site .slideWrap li.slide9 a{
+    background: url(/portfolio/minwon_police/img/site_banner_9.png)no-repeat center / contain;
+}
+.site .slideWrap li.slide10 a{
+    background: url(/portfolio/minwon_police/img/site_banner_10.png)no-repeat center / contain;
+}
+.site .slideWrap li.slide11 a{
+    background: url(/portfolio/minwon_police/img/site_banner_11.png)no-repeat center / contain;
+}
+.site .slideWrap li.slide12 a{
+    background: url(/portfolio/minwon_police/img/site_banner_12.png)no-repeat center / contain;
+}
+.site .slideWrap li.slide13 a{
+    background: url(/portfolio/minwon_police/img/site_banner_13.png)no-repeat center / contain;
+}
+.site .slideWrap li.slide14 a{
+    background: url(/portfolio/minwon_police/img/site_banner_14.png)no-repeat center / contain;
+}
+.site .slideWrap li.slide15 a{
+    background: url(/portfolio/minwon_police/img/site_banner_15.png)no-repeat center / contain;
+}
+.site .swiper-button-next {
+    width: 12px;
+    height: 17px;
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/swiperBt2.svg) no-repeat center / cover;
+    top: 70%;
+}
+.site .swiper-button-prev {
+    width: 12px;
+    height: 17px;
+    background: url(/portfolio/minwon_police/img/경찰민원아이콘/swiperBt1.svg) no-repeat center / cover;
+    top: 70%;
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+    display: none;
+}
+footer {
+    background: #3b414d;
+    padding: 20px 0;
+}
+.footerTop {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footerWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer_link li {
+    display: inline-block;
+    position: relative;
+}
+.footer_link li:nth-child(2)::before,
+.footer_link li:nth-child(4)::before {
+    width: 1px;
+    height: 12px;
+    background: #fff;
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: 8px;
+}
+.footer_link li:nth-child(2)::after {
+    width: 1px;
+    height: 12px;
+    background: #fff;
+    content: "";
+    position: absolute;
+    right: -3px;
+    top: 8px;
+}
+.footer_link li a {
+    font-size: 14px;
+    padding: 5px;
+    margin: 0 20px;
+    color: #fff;
+}
+.footer_link li:first-child a {
+    margin-left: 0;
+}
+.footer_link li:last-child a {
+    margin-right: 0;
+}
+.site_go > .btWrap {
+    display: inline-block;
+    position: relative;
+}
+.site_go > .btWrap.on button {
+    color: #000;
+}
+.site_go button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    background: #fff;
+    color: #5e5e5e;
+}
+.site_go > .btWrap > button::after {
+    display: inline-block;
+    content: "\e5c5";
+    font-size: 20px;
+    font-family: 'Material Icons Outlined';
+    font-weight: normal;
+    color: #5e5e5e;
+}
+.site_go > .btWrap.on > button::after {
+    content: "\e5c7";
+    color: #000;
+}
+.site_go > .btWrap ul {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    z-index: 10;
+    width: 200px;
+    text-align: center;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #d1d1d1;
+}
+.site_go > .btWrap.on ul {
+    display: block;
+}
+.site_go ul > li {
+    padding: 10px 0;
+}
+.site_go ul > li:hover {
+    background: #efefef;
+}
+.site_go ul a {
+    display: block;
+    font-size: 14px;
+    color: #000;
+}
+.footerBottom > p {
+    font-size: 14px;
+    color: #fff;
+}
+.background {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    opacity: 0;
+}
+.background.show {
+    opacity: 1;
+    z-index: 1000;
+    transition: all 0.5s;
+}
+.window {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    background: #ffffff;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    padding: 30px;
+}
+.background.show .modal {
+    z-index: 1000;
+    transition: all 0.5s;
+    transform: translate(-50%, -50%);
+}
+.modal p {
+    text-align: center;
+    padding-bottom: 50px;
+    line-height: 2.4;
+}
+.closeBt {
+    display: block;
+    font-size: 14px;
+    width: 30%;
+    padding: 7px;
+    background-color: #efefef;
+    color: #9f9f9f;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #dddddd;
+}
