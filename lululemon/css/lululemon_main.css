@@ -1,0 +1,490 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&family=Noto+Sans:wght@400;700&family=Roboto:wght@400;500&family=Scheherazade+New&display=swap');
+/* 구글폰트 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+/* fontawesome */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* 구글아이콘 */
+@import url('/ez210927/lhk/lululemon/lib/slick-1.8.1/slick/slick.css');
+@import url('/ez210927/lhk/lululemon/lib/slick-1.8.1/slick/slick-theme.css');
+/* slick css */
+@import url('/ez210927/lhk/lululemon/css/IE_lululemon.css');
+/* IE cross browsing */
+
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+body {
+    min-width: 1280px;
+}
+.inner {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.hamburger {
+    display: none;
+}
+.close {
+    display: none;
+}
+header {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+header.on {
+    background-color: #fff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+header.on .nav li a {
+    color: #4D4D4D;
+}
+header > .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.nav li {
+    width: 120px;
+    text-align: center;
+}
+.nav li a {
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 5px;
+} 
+.nav li a:hover, header.on .nav li a:hover {
+    color: #D0112B;
+    transition: all 0.2s;
+}
+.sub {
+    display: none;
+}
+header .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo > img {
+    width: 46px;
+    height: 46px;
+    image-rendering: -webkit-optimize-contrast;
+}
+h1 {
+    overflow: hidden;
+    text-indent: -9000px;
+}
+.main_video {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    padding-bottom: 56.25%;
+}
+.main_video > video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.brandStory {
+    background: url(/ez210927/lhk/lululemon/img/main/main_1_halftone.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.brandStory > .inner > .main_txt {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+h2 {
+    display: inline-block;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 60px;
+    color: #fff;
+    font-weight: 400;
+    padding-bottom: 30px;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+} 
+h2::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #D0112B;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 40px;
+}
+.main_txt > p , .tech_txt > p , .career_txt > p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    padding-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+.main_txt > p:first-of-type , .tech_txt > p:first-of-type , .career_txt > p:first-of-type {
+    font-weight: 400;
+}
+.moreView {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    padding: 10px 29px;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 26px;
+    letter-spacing: 0.5px;
+}
+.moreView .material-icons-outlined {
+    vertical-align: middle;
+    font-size: 20px;
+}
+.moreView:hover {
+    background-color: #D0112B;
+    border: 1px solid #D0112B;
+    transition: all 0.2s;
+}
+.sec {
+    width: 100%;
+    background: url(/ez210927/lhk/lululemon/img/main/sec2_33.jpg) no-repeat;
+    background-size: cover;
+}
+.sec > .tech {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+}
+.tech_txt {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.tech_txt h2 {
+    padding-bottom: 50px;
+}
+.tech_txt h2::after {
+    bottom: 65px;
+    transform: translateX(10px);
+}
+.tech_txt p:last-of-type {
+    line-height: 2;
+}
+.sec > .news {
+    background-color: rgba(0, 0, 0, 0.85);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.news > .inner > .banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.slick-dots {
+    bottom: 5px;
+}
+.slick-dots li button:before {
+    color: #d4d4d4;
+    opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+    color: #D0112B;
+    opacity: 1;
+}
+.slick-dots li {
+    margin: 0;
+}
+:root {
+    --swiper-navigation-color: #fff;
+    --swiper-pagination-color: #D0112B;
+}
+.news > .inner > .banner > .img_ba {
+    width: 60%;
+    height: 600px;
+    overflow: hidden;
+}
+.news > .inner > .banner > .img_ba > .baWrap .ba {
+    display: inline-block;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.news > .inner > .banner > .img_ba > .baWrap .ba1 {
+    background: url(/ez210927/lhk/lululemon/img/news/photo-1627483297886-49710ae1fc22.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.news > .inner > .banner > .img_ba > .baWrap .ba2 {
+    background: url(/ez210927/lhk/lululemon/img/news/photo-1612685179841-3965cf0c3f70.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.news > .inner > .banner > .img_ba > .baWrap .ba3 {
+    background: url(/ez210927/lhk/lululemon/img/news/9ed7de5c9fd01a9b561c1bb71b95061ca0337926-1600x160022.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.news > .inner > .banner > .img_ba > .baWrap .ba4 {
+    background: url(/ez210927/lhk/lululemon/img/news/photo-1552083375-1447ce886485.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.news > .inner > .banner > .img_ba > .baWrap .ba5 {
+    background: url(/ez210927/lhk/lululemon/img/news/LikeNew_MediaHubJuneMega2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.news > .inner > .banner > .img_ba > .baWrap .ba > .title {
+    width: 100%;
+    height: 194px;
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    color: #000;
+    text-align: right;
+    transform: translateY(84px);
+}
+.img_ba > .baWrap .ba > .title > .titleWrap {
+    height: 110px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.img_ba > .baWrap .ba > .title > .titleWrap > .news_date {
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 400;
+}
+.img_ba > .baWrap .ba > .title > .titleWrap > .news_date > .month {
+    font-size: 40px;
+    font-weight: 500;
+}
+.img_ba > .baWrap .ba > .title > .detail {
+    height: 84px;
+    padding: 15px 30px 15px 15px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.img_ba > .baWrap .ba > .title > .detail > .hoverShow {
+    height: 48px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: right;
+}
+.news > .inner > .banner > .img_ba > .baWrap .ba::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.0);
+    position: absolute;
+}
+.news > .inner > .banner > .img_ba > .baWrap .ba:hover::before {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.7s ease;
+}
+.news > .inner > .banner > .img_ba > .baWrap .ba:hover > .title {
+    transform: translateY(0);
+    transition: all 0.7s;
+}
+.img_ba > .baWrap .ba:hover .news_date {
+    color: #D0112B;
+}
+.news_title {
+    font-size: 24px;
+    padding-right: 30px;
+    font-weight: 400;
+}
+.banner > .text_ba {
+    width: 39%;
+    height: 600px;
+    padding: 60px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 10;
+}
+.banner > .text_ba > .news {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.banner > .text_ba h3 {
+    font-size: 36px;
+    color: #000;
+    text-transform:capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.banner > .text_ba h3::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #D0112B;
+    position: absolute;
+    top: 28px;
+    left: 96px;
+}
+.text_ba .plus_icon {
+    background: url(/ez210927/lhk/lululemon/img/icon/plus2.png);
+    width: 26px;
+    height: 26px;
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+}
+.banner > .text_ba > .wrap {
+    height: 423px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.banner > .text_ba > .wrap > .text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.banner > .text_ba > .wrap > .text::after {
+    content: "";
+    width: 348px;
+    height: 1px;
+    background-color: #e7e6e6;
+    position: absolute;
+    bottom: -15px;
+}
+.banner > .text_ba > .wrap > .text > span {
+    color: #000;
+    display: inline-block;
+    width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 400;
+}
+.banner > .text_ba > .wrap > .text > .news_date {
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+    line-height: 1.3;
+}
+.banner > .text_ba > .wrap > .text:hover > .news_date,
+.banner > .text_ba > .wrap > .text.on > .news_date {
+    color: #D0112B;
+    transition: all 0.3s;
+}
+.banner > .text_ba > .wrap > .text:hover > span,
+.banner > .text_ba > .wrap > .text.on > span {
+    color: #D0112B;
+}
+.banner > .text_ba > .wrap > .text > .news_date > .month {
+    font-size: 31px;
+    font-weight: 500;
+}
+.career {
+    height: 100vh;
+    background: url(/ez210927/lhk/lululemon/img/main/career.png);
+    background-size: cover;
+}
+.career_txt {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+    margin-right: 10px;
+}
+.career_txt > h2::after {
+    bottom: 44px;
+}
+footer {
+    width: 100%;
+    height: 95px;
+    background-color: #fff;
+}
+footer > .inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_left {
+    display: flex;
+    flex-direction: row;
+}
+.footer_left > .logo {
+    margin-right: 20px;
+}
+.footer_txt {
+    font-size: 14px;
+    color: #4d4d4d;
+}
+.footer_txt > p {
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.footer_txt > ul {
+    display: flex;
+    flex-direction: row;
+}
+.footer_txt > ul >li {
+    margin-right: 10px;
+}
+footer a {
+    font-weight: 400;
+    color: #4d4d4d;
+}
+.footer_right > .sns {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

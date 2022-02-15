@@ -1,0 +1,389 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&family=Noto+Sans:wght@400;700&family=Roboto:wght@400;500&display=swap');
+/* 구글폰트 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+/* fontawesome */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* 구글아이콘 */
+@import url('/ez210927/lhk/lululemon/css/IE_lululemon.css');
+/* IE cross browsing */
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+    image-rendering: -webkit-optimize-contrast;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+body {
+    min-width: 1280px;
+    background-color: #f9f9f9;
+}
+.inner {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.inner_1500 {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    color: #000;
+    padding-bottom: 50px;
+}
+.hamburger {
+    display: none;
+}
+.close {
+    display: none;
+}
+header {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+header.on {
+    background-color: #fff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+header.on .nav li a {
+    color: #4D4D4D;
+}
+header > .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.nav li {
+    width: 120px;
+    text-align: center;
+}
+.nav li a {
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 5px;
+} 
+.nav li a:hover, header.on .nav li a:hover {
+    color: #D0112B;
+    transition: all 0.2s;
+}
+.sub {
+    display: none;
+}
+header .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo > img {
+    width: 46px;
+    height: 46px;
+    image-rendering: -webkit-optimize-contrast;
+}
+.cateBanner {
+    width: 100%;
+    height: 845px;
+    background: url(/ez210927/lhk/lululemon/img/news/Footer_QualityPromise_hero.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.cateBanner::before {
+    content: "";
+    width: 100%;
+    height: 845px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+.cateBanner > .inner {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cateBanner > .inner > .wrap {
+    z-index: 2;
+}
+.cateBanner > .inner > .wrap > h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.cateBanner > .inner > .wrap > h2::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #D0112B;
+    position: absolute;
+    bottom: 32px;
+}
+.cateBanner > .inner > .wrap > p {
+    font-size: 25px;
+}
+.lululemonNews {
+    padding-top: 104px;
+}
+.inner_1500 > .inner {
+    padding-top: 170px;
+}
+.newsWrap {
+    display: grid;
+    grid-template-rows: 500px 400px 400px 500px;
+    gap: 1em;
+}
+.newsWrap .card {
+    overflow: hidden;
+}
+.newsWrap .card1 {
+    background: url(/ez210927/lhk/lululemon/img/news/photo-1627483297886-49710ae1fc22.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0% 10%;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+.newsWrap .card2 {
+    background: url(/ez210927/lhk/lululemon/img/news/photo-1612685179841-3965cf0c3f70.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.newsWrap .card3 {
+    background: url(/ez210927/lhk/lululemon/img/news/9ed7de5c9fd01a9b561c1bb71b95061ca0337926-1600x160022.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0% 33%;
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+.newsWrap .card4 {
+    background: url(/ez210927/lhk/lululemon/img/news/photo-1552083375-1447ce886485.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.newsWrap .card5 {
+    background: url(/ez210927/lhk/lululemon/img/news/LikeNew_MediaHubJuneMega2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.newsWrap .card6 {
+    background: url(/ez210927/lhk/lululemon/img/news/photo-1556761175-5973dc0f32e7.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+.newsWrap .card7 {
+    background: url(/ez210927/lhk/lululemon/img/news/photo-1543269865-cbf427effbad.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0% 57%;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+.newsWrap a {
+    display: block;
+    position: relative;
+}
+.newsWrap a > .title {
+    width: 100%;
+    height: 194px;
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    color: #000;
+    text-align: right;
+    transform: translateY(84px);
+}
+.newsWrap a > .title > .titleWrap {
+    height: 110px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px 30px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.newsWrap a > .title > .detail {
+    height: 84px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+
+}
+.newsWrap a > .title > .detail > .hoverShow {
+    text-align: right;
+}
+.newsWrap a > .title > .detail1 > .hoverShow {
+    padding-left: 260px;
+}
+.newsWrap a::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.0);
+    position: absolute;
+}
+.newsWrap a:hover::before {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.7s ease;
+}
+.newsWrap a:hover > .title {
+    transform: translateY(0);
+    transition: all 0.7s;
+}
+.newsWrap a:hover .news_date {
+    color: #D0112B;
+}
+.news_title {
+    padding-right: 30px;
+    font-weight: 400;
+    word-break: keep-all;
+}
+.news_title1 {
+    font-size: 24px;
+}
+.news_title2 {
+    font-size: 20px;
+}
+.news_date {
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 400;
+}
+.news_date > .month {
+    font-size: 40px;
+    font-weight: 500;
+}
+.bt {
+    text-align: center;
+    padding-bottom: 200px;
+}
+.moreBt {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    padding: 10px 29px;
+    margin-top: 50px;
+    border: 1px solid #000;
+    border-radius: 26px;
+    letter-spacing: 0.5px;
+}
+.moreBt .material-icons-outlined {
+    vertical-align: middle;
+    font-size: 20px;
+}
+.moreBt:hover {
+    color: #fff;
+    background-color: #D0112B;
+    border: 1px solid #D0112B;
+    transition: all 0.2s;
+}
+.newsLetter {
+    height: 100vh;
+    background: url(/ez210927/lhk/lululemon/img/news/unsplash_RYyr-k3Ysqg.jpg) no-repeat;
+    background-size: cover;
+}
+.newsLetter .textWrap {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.newsLetter .textWrap > h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    color: #000;
+    padding-bottom: 50px;
+    position: relative;
+}
+.newsLetter .textWrap > h3::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #D0112B;
+    position: absolute;
+    bottom: 60px;
+}
+.newsLetter .textWrap > p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+footer {
+    width: 100%;
+    height: 95px;
+    background-color: #fff;
+}
+footer > .inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_left {
+    display: flex;
+    flex-direction: row;
+}
+.footer_left > .logo {
+    margin-right: 20px;
+}
+.footer_txt {
+    font-size: 14px;
+    color: #4d4d4d;
+}
+.footer_txt > p {
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.footer_txt > ul {
+    display: flex;
+    flex-direction: row;
+}
+.footer_txt > ul >li {
+    margin-right: 10px;
+}
+footer a {
+    font-weight: 400;
+    color: #4d4d4d;
+}
+.footer_right > .sns {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
