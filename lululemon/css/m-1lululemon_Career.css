@@ -1,0 +1,183 @@
+body {
+    min-width: 100%;
+}
+.inner_1500 {
+    width: 95%;
+}
+.inner {
+    width: 95%;
+}
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    z-index: 200;
+    padding-top: 20%;
+    background-color: #fff;
+    transform: translateX(100%);
+    flex-direction: column;
+}
+header > .inner {
+    width: 100%;
+}
+header > .inner > .on {
+    transform: translateX(0);
+    transition: all 0.3s;
+}
+.nav > li {
+    width: auto;
+}
+.nav > li > a {
+    width: 200px; 
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 1.5rem;
+    color: #4D4D4D;
+    height: 80px;
+    line-height: 80px;
+}
+.nav li a:hover {
+    color: #4D4D4D;
+}
+.nav .sub {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 0;
+    overflow-y: hidden;
+}
+.brandBt ~ .on {
+    height: 100px;
+    transition: all 0.3s;
+}
+.techBt ~ .on {
+    height: 300px;
+    transition: all 0.3s;
+}
+.nav .sub li {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+}
+.nav .sub li > a {
+    display: inline-block;
+    font-size: 1rem;
+    color: #4D4D4D;
+}
+.close {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    display: block;
+    color: #4D4D4D;
+}
+.closeBt {
+    display: block;
+    font-size: 40px;
+}
+header.on .hamburger {
+    color: #4d4d4d;
+}
+.hamburger {
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+}
+header > .inner {
+    display: flex;
+    justify-content: center;
+}
+.cateBanner {
+    height: 400px;
+}
+.cateBanner::before {
+    height: 400px;
+}
+.cateBanner > .inner > .wrap {
+    width: 95%;
+}
+.cateBanner > .inner > .wrap > h2 {
+    font-size: 45px;
+}
+.cateBanner > .inner > .wrap > h2::after {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+}
+.cateBanner > .inner > .wrap > p {
+    font-size: 18px;
+}
+.tab > .inner {
+    width: 95%;
+}
+h3 {
+    font-size: 40px;
+}
+.impactAgenda h3, .benefits h3 {
+    margin: 0 0 20px 0;
+}
+h3::after {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    bottom: 55px;
+    right: unset;
+}
+h4 {
+    font-size: 20px;
+}
+.txtWrap {
+    flex-direction: column;
+    text-align: center;
+}
+.txtWrap > p {
+    word-break: keep-all;
+}
+.impactAgenda .txtWrap > p {
+    padding: 0 80px;
+}
+.imgWrap .impactAgenda_img {
+    height: 24vw;
+}
+.impactAgenda_txt > p:nth-child(2) {
+    font-size: 16px;
+}
+.impactAgenda_txt > p:last-child {
+    font-size: 14px;
+}
+.search .searchTextWrap {
+    padding: 50px 0;
+}
+.moreBt {
+    margin-top: 36px;
+}
+footer {
+    height: 140px;
+    padding: 15px 0;
+}
+.footer_txt {
+    font-size: 12px;
+}
+.footer_txt > ul {
+    justify-content: center;
+}
+footer > .inner {
+    display: flex;
+    flex-direction: column-reverse;
+} 
+.footer_left > .logo {
+    display: none;
+}
+.footer_right {
+    padding-bottom: 15px;
+}

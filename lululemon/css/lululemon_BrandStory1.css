@@ -1,0 +1,680 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&family=Noto+Sans:wght@400;700&family=Roboto:wght@400;500&family=Scheherazade+New&display=swap');
+/* 구글폰트 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+/* fontawesome */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* 구글아이콘 */
+@import url('/lululemon/lib/slick-1.8.1/slick/slick.css');
+@import url('/lululemon/lib/slick-1.8.1/slick/slick-theme.css');
+/* slick css */
+@import url('/lululemon/css/IE_lululemon.css');
+/* IE cross browsing */
+
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+body {
+    min-width: 1280px;
+    background-color: #f9f9f9;
+}
+.inner {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.inner_1500 {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    color: #000;
+    padding-bottom: 50px;
+}
+.hamburger {
+    display: none;
+}
+.close {
+    display: none;
+}
+header {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+header.on {
+    background-color: #fff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+header.on .nav li a {
+    color: #4D4D4D;
+}
+header > .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.nav li {
+    width: 120px;
+    text-align: center;
+}
+.nav li a {
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 5px;
+} 
+.nav li a:hover, header.on .nav li a:hover {
+    color: #D0112B;
+    transition: all 0.2s;
+}
+.sub {
+    display: none;
+}
+header .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo > img {
+    width: 46px;
+    height: 46px;
+    image-rendering: -webkit-optimize-contrast;
+}
+.cateBanner {
+    width: 100%;
+    height: 845px;
+    background: url(/lululemon/img/brandstory/KR_brandstory_hero.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.cateBanner::before {
+    content: "";
+    width: 100%;
+    height: 845px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+.cateBanner > .inner {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cateBanner > .inner > .wrap {
+    z-index: 2;
+}
+.cateBanner > .inner > .wrap > h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    position: relative;
+}
+.cateBanner > .inner > .wrap > h2::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #D0112B;
+    position: absolute;
+    bottom: 32px;
+}
+.cateBanner > .inner > .wrap > p {
+    font-weight: 400;
+    font-size: 25px;
+}
+.tab > .inner {
+    height: 104px;
+    display: flex;
+    align-items: flex-end;
+}
+.tab > .inner > ul {
+    display: flex;
+    flex-direction: row;
+}
+.tab > .inner > ul > li > a {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #b0b0b0;
+    padding: 5px 5px 20px 5px;
+    margin-right: 60px;
+    position: relative;
+}
+.tab > .inner > ul > li > a::after {
+    content: "";
+    width: 1px;
+    height: 2px;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+.tab > .inner > ul > li > a:hover {
+    color: #D0112B;
+}
+.tab > .inner > ul > li > .tabButton.on {
+    color: #D0112B;
+    border-bottom: 2px solid #D0112B;
+}
+.tab > .inner > ul > li > a:hover::before, .tabButton.on::before {
+    content: ".";
+    font-size: 30px;
+    color: #D0112B;
+    position: absolute;
+    bottom: 12px;
+    right: -3px;
+}
+.tab > .inner > ul > li > a:hover::after {
+    width:100%;
+    height: 2px;
+    background-color: #D0112B;
+    transition: all 0.5s ease;
+}
+.ourStory, .socialImpact {
+    display: none;
+}
+.tabBox.on {
+    display: block;
+}
+.ourStory > .inner_1500 > .inner {
+    height: 1320px;
+    padding-top: 170px;
+    position: relative;
+}
+.ourStory .ourStory_img {
+    width: 750px;
+    height: 415px;
+    background: url(/lululemon/img/brandstory/10.1.1_History_banner.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.ourStory .ourStory_text {
+    text-align: right;
+    color: #000;
+    position: absolute;
+    bottom: 175px;
+    right: 0;
+}
+.ourStory .ourStory_text p:first-child {
+    font-family: 'Scheherazade New', serif;
+    font-size: 150px;
+    padding-bottom: 30px;
+}
+.ourStory .ourStory_text p:nth-child(2) , .ourStory .ourStory_text p:nth-child(3) , .ourStory .ourStory_text p:nth-child(4) {
+    line-height: 2;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.OurPurpose_Vision {
+    width: 100%;
+    height: 100vh;
+    background: url(/lululemon/img/brandstory/photo-1593810451137-5dc55105dace.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+.OurPurpose_Vision > .inner > .wrap {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.OurPurpose_Vision > .inner > .wrap > h3 {
+    font-size: 60px;
+    text-shadow: 3px 3px 6px #000;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding-bottom: 25px;
+    color: #fff;
+}
+.OurPurpose_Vision > .inner > .wrap > p:nth-child(2) > span {
+    font-weight: 500;
+}
+.OurPurpose_Vision > .inner > .wrap > p {
+    line-height: 2.5;
+    padding-bottom: 25px;
+}
+.lulu_img {
+    width: 205px;
+    height: 65px;
+    background: url(/lululemon/img/brandstory/lulu_img.png) no-repeat;
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+    display: inline-block;
+    margin-top: 45px;
+}
+.lotus > .inner_1500 > .inner {
+    padding-top: 200px;
+    height: 100vh;
+}
+.lotus_img {
+    background: url(/lululemon/img/brandstory/lotus2.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 815px;
+    height: 590px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lotus_img > span {
+    color: #fff;
+    font-size: 20px;
+    padding: 30px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.lotus_img > .connect {
+    align-self: flex-start;
+    margin-top: 100px;
+    padding-right: 48px;
+}
+.lotus_img::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url(/lululemon/img/main/lululemon_red.png) no-repeat;
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+    position: absolute;
+    right: 63px;
+    bottom: 50px;
+}
+.lotus_txt {
+    width: 860px;
+    height: 0;
+    margin: 0 auto;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    top: 62%;   
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    z-index: 5;
+}
+.lotus_txt > div {
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0;
+    position: absolute;
+}
+.lotus_txt > div > p:first-child {
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-right: 50px;
+}
+.lotus_txt > div > p:last-child {
+    line-height: 1.6;
+    font-size: 16px;
+    transform: rotate(.001deg);
+}
+.lotus_img > span:hover {
+    color: #D0112B;
+    transform: scale(1.2);
+    transition: all 0.7s ease;
+}
+.lotus_img > span:hover ~ .lotus_txt {
+    height: 140px;
+    padding: 30px;
+    opacity: 1;
+    transition: all 0.7s ease;
+    position: absolute;
+}
+.lotus_img > .sweat:hover ~ .lotus_txt > .sweat_txt,
+.lotus_img > .connect:hover ~ .lotus_txt > .connect_txt,
+.lotus_img > .grow:hover ~ .lotus_txt > .grow_txt {
+    opacity: 1;
+    transition: all 1s;
+}
+.socialImpact > .inner_1500 > .inner {
+    padding: 170px 0 50px 0;
+}
+.socialImpact_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+.socialImpact_wrap > .socialImpact_txt1 {
+    align-self: flex-end;
+}
+.socialImpact_wrap > .socialImpact_txt1 p:last-child {
+    text-align: left;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.8;
+}
+.socialImpact_wrap > .socialImpact_img1 {
+    width: 705px;
+    height: 705px;
+    background: url(/lululemon/img/brandstory/KR_social_impact_hero.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.socialImpact_wrap > .socialImpact_img2 {
+    width: 735px;
+    height: 357px;
+    background: url(/lululemon/img/brandstory/HtB\ header\ hero.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.socialImpact_wrap > .socialImpact_txt2 {
+    align-self: flex-end;
+}
+.socialImpact_wrap > .socialImpact_txt2 p {
+    text-align: right;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.8;
+}
+.hereToBe {
+    text-align: center;
+    padding-top: 100px;
+}
+.hereToBe > p {
+    line-height: 1.6;
+    padding-bottom: 20px;
+}
+.hereToBe_img {
+    width: 50%;
+    height: 226px;
+}
+.socialImpact .img_wrap {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+}
+.hereToBe_img1 {
+    background: url(/lululemon/img/brandstory/NA_May2021_IDEA_Commitments_1_1_md_Masonry_D.webp) 50% 50% no-repeat;
+    background-size: cover;
+}
+.hereToBe_img2 {
+    background: url(/lululemon/img/brandstory/NA_May2021_IDEA_Progress_1_1_md_Masonry_D.webp) 50% 50% no-repeat;
+    background-size: cover;
+}
+.socialImpact .text_wrap > p {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.6;
+    padding-bottom: 20px;
+}
+.socialImpact .text_wrap > p > span {
+    font-weight: 500;
+}
+.socialImpact .text_wrap > p:last-child a {
+    color: #D0112B;
+    border-bottom: 1px solid #D0112B;
+    font-weight: 500;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #EAE8E8;
+    margin-top: 50px;
+    line-height: 1.6;
+}
+tr {
+    border-bottom: 1px solid #EAE8E8;
+}
+td {
+    padding: 30px;
+}
+.wellbeing_img {
+    width: 250px;
+    height: 135px;
+}
+.GirlsOpportunityAlliance {
+    background: url(/lululemon/img/brandstory/GOA_TTP_logos_combined_1.png) no-repeat;
+    background-position: center;
+}
+.TrevorProject {
+    background: url(/lululemon/img/brandstory/GOA_TTP_logos_combined_2.png) no-repeat;
+    background-position: center;
+}
+.PeaceOnPurpose {
+    background: url(/lululemon/img/brandstory/POP-logo\ 1.png) no-repeat;
+    background-position: center;
+}
+.NaMi {
+    background: url(/lululemon/img/brandstory/NAMI_logo_resized_4.png) no-repeat;
+    background-position: center;
+}
+table .tableText {
+    width: 840px;
+}
+.impactCount {
+    text-align: center;
+    padding: 250px 0;
+}
+.impactCount h4 {
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+    padding-bottom: 50px;
+}
+.impactCount h4::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #D0112B;
+    position: absolute;
+    bottom: 57px;
+    transform: translateX(10px);
+}
+.impactCount P {
+    font-size: 20px;
+    color: #000;
+    display: inline-block;
+    padding: 30px;
+}
+.impactCount > p > span {
+    font-weight: 500;
+}
+.Inclusion > .text_wrap {
+    text-align: center;
+}
+.Inclusion > .text_wrap > p:first-of-type {
+    font-size: 20px;
+}
+.swiper-button-next {
+    content: "";
+    width: 105px;
+    height: 20px;
+    border-bottom: 1px solid #000;
+    right: 8%;
+    top: auto;
+    bottom: 10%;
+    position: absolute;
+}
+.swiper-button-next::after {
+    content: "";
+    width: 22px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    right: -3px;
+    bottom: 7px;
+    transform: rotate(45deg);
+}
+/* .swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
+    height: 6px;
+    display: flex;
+}
+.swiper-pagination-horizontal > .swiper-pagination-bullet {
+    width: 20%;
+    flex: 1 1 auto;
+    height: 6px;
+    background: #c4c4c4;
+    border-radius: unset;
+}
+.swiper-pagination-horizontal > .swiper-pagination-bullet-active {
+    width: 20%;
+    flex: 1 1 auto;
+    background: #D0112B;
+    border-radius: unset;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: unset;
+} */
+.slick-dots {
+    bottom: -18px;
+}
+.slick-dots li {
+    height: 6px;
+    width: 20%;
+    margin: 0%;
+    bottom: 16px;
+}
+.slick-dots li button {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.slick-dots li button:before {
+    width: 100%;
+    height: 100%;
+    background: #c4c4c4;
+    border-radius: unset;
+    content: "";
+}
+.slick-dots li.slick-active button:before {
+    width: 100%;
+    background: #D0112B;
+    border-radius: unset;
+}
+.slide {
+    width: 100%;
+    height: 564px;
+    margin-top: 70px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+.slide > .slideWrap .slide_ba {
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9;
+    padding: 85px;
+}
+.slide > .slideWrap .slide_ba > .slide_txt p {
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.slide > .slideWrap .slide_ba > .slide_txt p:first-child {
+    font-size: 14px;
+    color: #D0112B;
+    font-weight: 500;
+}
+.slide > .slideWrap .slide_ba > .slide_txt p:last-child {
+    font-size: 30px;
+    color: #000;
+}
+.slide > .slideWrap .slide_ba > .slide_cir {
+    width: 1030px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 20px;
+}
+.slide > .slideWrap .slide_ba > .slide_cir > li > span {
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 400;
+    width: 223px;
+    height: 223px;
+    border-radius: 223px;
+    background-color: #fff;
+    text-align: center;
+    color: #000;
+}
+footer {
+    width: 100%;
+    height: 95px;
+    background-color: #fff;
+}
+footer > .inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_left {
+    display: flex;
+    flex-direction: row;
+}
+.footer_left > .logo {
+    margin-right: 20px;
+}
+.footer_txt {
+    font-size: 14px;
+    color: #4d4d4d;
+}
+.footer_txt > p {
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.footer_txt > ul {
+    display: flex;
+    flex-direction: row;
+}
+.footer_txt > ul >li {
+    margin-right: 10px;
+}
+footer a {
+    font-weight: 400;
+    color: #4d4d4d;
+}
+.footer_right > .sns {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

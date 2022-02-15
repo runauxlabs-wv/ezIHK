@@ -1,0 +1,413 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&family=Noto+Sans:wght@400;700&family=Roboto:wght@400;500&display=swap');
+/* 구글폰트 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+/* fontawesome */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* 구글아이콘 */
+@import url('/lululemon/css/IE_lululemon.css');
+/* IE cross browsing */
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+    image-rendering: -webkit-optimize-contrast;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+body {
+    min-width: 1280px;
+    background-color: #f9f9f9;
+}
+.inner {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.inner_1500 {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    color: #000;
+    padding-bottom: 50px;
+}
+.hamburger {
+    display: none;
+}
+.close {
+    display: none;
+}
+header {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+header.on {
+    background-color: #fff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+header.on .nav li a {
+    color: #4D4D4D;
+}
+header > .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.nav li {
+    width: 120px;
+    text-align: center;
+}
+.nav li a {
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 5px;
+} 
+.nav li a:hover, header.on .nav li a:hover {
+    color: #D0112B;
+    transition: all 0.2s;
+}
+.sub {
+    display: none;
+}
+header .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo > img {
+    width: 46px;
+    height: 46px;
+    image-rendering: -webkit-optimize-contrast;
+}
+.cateBanner {
+    width: 100%;
+    height: 845px;
+    background: url(/lululemon/img/career/photo-1522202176988-66273c2fd55f.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.cateBanner::before {
+    content: "";
+    width: 100%;
+    height: 845px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+.cateBanner > .inner {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cateBanner > .inner > .wrap {
+    z-index: 2;
+}
+.cateBanner > .inner > .wrap > h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.cateBanner > .inner > .wrap > h2::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #D0112B;
+    position: absolute;
+    bottom: 32px;
+}
+.cateBanner > .inner > .wrap > p {
+    font-size: 25px;
+}
+.lululemonCareer {
+    padding-top: 80px;
+}
+.inner_1500 > .inner {
+    padding-top: 170px;
+}
+h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+}
+h3::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #D0112B;
+    position: absolute;
+    bottom: 55px;
+    right: -13px;
+}
+h4 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.ceoComment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20%;
+}
+.ceoComment > .ceo_img {
+    width: 58%;
+    height: 445px;
+    background: url(/lululemon/img/career/co-image.jpg) no-repeat;
+    background-size: cover;
+}
+.ceoComment > .ceo_txt {
+    width: 40%;
+    align-self: flex-end;
+    text-align: justify;
+}
+.ceoComment > .ceo_txt > p:first-child {
+    line-height: 1.8;
+    padding-bottom: 30px;
+}
+.ceoComment > .ceo_txt > p:last-child {
+    font-weight: 400;
+}
+.txtWrap {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 80px;
+}
+.txtWrap > p {
+    line-height: 1.8;
+}
+.imgWrap {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: space-between;
+    padding-bottom: 20%;
+}
+.imgWrap > .card {
+    flex: 1 1 30%;
+}
+.imgWrap .impactAgenda_img {
+    width: 100%;
+    height: 300px;
+}
+.imgWrap .impactAgenda_img1 {
+    background: url(/lululemon/img/career/impact-human.jpg) no-repeat;
+    background-size: cover;
+}
+.imgWrap .impactAgenda_img2 {
+    background: url(/lululemon/img/career/impact-bewell.jpg) no-repeat;
+    background-size: cover;
+}
+.imgWrap .impactAgenda_img3 {
+    background: url(/lululemon/img/career/impact-beplanet.jpg) no-repeat;
+    background-size: cover;
+}
+.impactAgenda_txt {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+.impactAgenda h3 {
+    margin-right: 50px;
+}
+.impactAgenda_txt > p:nth-child(1) {
+    font-weight: 600;
+    color: #D0112B;
+    padding-bottom: 10px;
+}
+.impactAgenda_txt p:nth-child(2) {
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+.benefits h3 {
+    margin-right: 28px;
+}
+.benefitWrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0 150px 0;
+    gap: 40px;
+}
+.benefitWrap > div {
+    flex: 1 1 40%;
+    border-bottom: 1px solid #EAE8E8;
+    padding-bottom: 20px;
+}
+.benefitWrap > div > .sweatBenefits::before {
+    display: block;
+    content: "";
+    width: 65px;
+    height: 65px;
+    background: url(/lululemon/img/icon/SweatBenefits.png) no-repeat;
+    background-size: cover;
+}
+.benefitWrap > div > .parenthood::before {
+    display: block;
+    content: "";
+    width: 65px;
+    height: 65px;
+    background: url(/lululemon/img/icon/Parenthood.png) no-repeat;
+    background-size: cover;
+}
+.benefitWrap > div > .payEquity::before {
+    display: block;
+    content: "";
+    width: 65px;
+    height: 65px;
+    background: url(/lululemon/img/icon/PayEquity.png) no-repeat;
+    background-size: cover;
+}
+.benefitWrap > div > .goalSetting::before {
+    display: block;
+    content: "";
+    width: 65px;
+    height: 65px;
+    background: url(/lululemon/img/icon/GoalSetting.png) no-repeat;
+    background-size: cover;
+}
+.benefitWrap > div > .ImmersiveExperiences::before {
+    display: block;
+    content: "";
+    width: 65px;
+    height: 65px;
+    background: url(/lululemon/img/icon/ImmersiveExperiences.png) no-repeat;
+    background-size: cover;
+}
+.benefitWrap > div > .diversity::before {
+    display: block;
+    content: "";
+    width: 65px;
+    height: 65px;
+    background: url(/lululemon/img/icon/Diversity.png) no-repeat;
+    background-size: cover;
+}
+.benefitWrap > div > p:first-child {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.benefitWrap > div > p {
+    text-align: justify;
+}
+.search {
+    width: 100%;
+    height: 100vh;
+    background: url(/lululemon/img/career/photo-1600880292203-757bb62b4baf.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.search .searchTextWrap {
+    background-color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.search p:first-of-type {
+    line-height: 2.2;
+}
+.search p:last-of-type {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 45px;
+}
+.moreBt {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    padding: 10px 29px;
+    margin-top: 70px;
+    border: 1px solid #000;
+    border-radius: 26px;
+    letter-spacing: 0.5px;
+}
+.moreBt .material-icons-outlined {
+    vertical-align: middle;
+    font-size: 20px;
+}
+.moreBt:hover {
+    color: #fff;
+    background-color: #D0112B;
+    border: 1px solid #D0112B;
+    transition: all 0.2s;
+}
+footer {
+    width: 100%;
+    height: 95px;
+    background-color: #fff;
+}
+footer > .inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_left {
+    display: flex;
+    flex-direction: row;
+}
+.footer_left > .logo {
+    margin-right: 20px;
+}
+.footer_txt {
+    font-size: 14px;
+    color: #4d4d4d;
+}
+.footer_txt > p {
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.footer_txt > ul {
+    display: flex;
+    flex-direction: row;
+}
+.footer_txt > ul >li {
+    margin-right: 10px;
+}
+footer a {
+    font-weight: 400;
+    color: #4d4d4d;
+}
+.footer_right > .sns {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
