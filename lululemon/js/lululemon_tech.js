@@ -72,6 +72,7 @@ var tabButtons = document.querySelectorAll('.tabButton');
         tabBoxs[index].classList.add("on");
         this.classList.add("on");
         $('.slideWrap').slick('setPosition');
+        AOS.refreshHard();
         e.preventDefault();
     })
 })

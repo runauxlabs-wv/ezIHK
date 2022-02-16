@@ -74,6 +74,7 @@ window.onload = function () {
             }
             tabBoxs[index].classList.add("on");
             this.classList.add("on");
+            AOS.refreshHard();
             e.preventDefault();
         })
     })
