@@ -33,7 +33,7 @@
     color: transparent;
 }
 .is-ie .hamburger {
-    top: 25px;
+    top: 18px;
 }
 .ie9 .close {
     width: 24px;
@@ -478,7 +478,7 @@
     .is-ie .wellbeing_img {
         margin: 0 auto;
     }
-    .is-ie .swiper-button-next {
+    .is-ie .slideWrap .swiper-button-next {
         top: auto;
     }
     .ie9 .impactAgenda .imgWrap .card,
