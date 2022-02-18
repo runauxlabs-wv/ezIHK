@@ -137,17 +137,18 @@ h2::after {
     width: 100%;
     height: 360px;
 }
-.news > .inner > .banner > .img_ba > .baWrap > .ba {
-    height: auto;
+.news > .inner > .banner > .img_ba > .baWrap .ba {
+    height: 38vh;
 }
 .news > .inner > .banner > .img_ba > .baWrap > .ba1 {
     background-position: unset;
 }
-.img_ba br {
-    display: none;
-}
+.img_ba br,
 .img_ba > .baWrap > .ba > .title > .titleWrap > .news_date {
     display: none;
+}
+.img_ba > .baWrap .ba > .title > .titleWrap > .news_date > .month {
+    display: block;
 }
 .banner > .text_ba {
     width: 100%;
@@ -156,7 +157,6 @@ h2::after {
 }
 .news_title {
     font-size: 20px;
-    padding: 0;
 }
 .banner > .text_ba > .wrap > .text::after {
     width: 100%;
