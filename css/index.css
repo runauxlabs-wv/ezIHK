@@ -224,9 +224,48 @@ h2 {
     position: absolute;
     top: 13%;
 }
+.project .textWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 30px;
+}
 .project h3 {
     font-size: 40px;
     padding-bottom: 30px;
+}
+.project .textWrap h3 {
+    padding: 0 20px 0 0;
+}
+.view {
+    margin-left: 10px;
+}
+.view a {
+    display: block;
+    width: 90px;
+    height: 32px;
+    padding: 5px 0;
+    text-align: center;
+    border: 1px solid #BDBDBD;
+    color: #000;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+.projectA .view a:hover {
+    border: 1px solid #D0112B;
+    transition: all 0.5s;
+}
+.projectB .view a:hover {
+    border: 1px solid #003A5E;
+    transition: all 0.5s;
+}
+.projectC .view a:hover {
+    border: 1px solid #EE2D23;
+    transition: all 0.5s;
+}
+.projectD .view a:hover {
+    border: 1px solid #2F3E8B;
+    transition: all 0.5s;
 }
 .project h4 {
     font-size: 25px;
@@ -236,13 +275,11 @@ h2 {
 .project h4 + p {
     line-height: 1.8;
 }
-.project .wrap {
+.project .left .wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-.project .wrap:first-of-type {
-    padding: 30px 0;
+    padding-top: 30px;
 }
 .project .wrap > div {
     width: 400px;
