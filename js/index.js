@@ -38,45 +38,51 @@ gsap.utils.toArray('.talkWrap').forEach(section => {
     });
   })
 
-// gsap.utils.toArray('.contactWrap').forEach(section => {
-// const elems = section.querySelectorAll('.contact');
-// // Set starting params for sections
-// gsap.set(elems, {
-//     y: 50,
-//     opacity: 0,
-//     duration: 1,
-//     ease: 'power3.out',
-//     overwrite: 'auto',
-// });
+  //aos 대신
+window.addEventListener('scroll', () => {
+var scrollLocation = document.documentElement.scrollTop; // 현재 스크롤바 위치
 
-// ScrollTrigger.create({
-//     trigger: section,
-//     start: 'top 60%',
-//     end: 'bottom 30%',
-// //   markers: true,
-//     onEnter: () => gsap.to(elems, {
-//     y: 0,
-//     opacity: 1,
-//     stagger: 0.2,
-//     }),
-//     onLeave: () => gsap.to(elems, {
-//     y: -50,
-//     opacity: 0,
-//     stagger: 0.2,
-//     }),
-//     // onEnterBack: () => gsap.to(elems, {
-//     // y: 0,
-//     // opacity: 1,
-//     // stagger: 0.2,
-//     // }),
-//     // onLeaveBack: () => gsap.to(elems, {
-//     // y: 50,
-//     // opacity: 0,
-//     // stagger: 0.2,
-//     // }),
-// });
-// })
-
+    if (scrollLocation > 8730) {
+    gsap.utils.toArray('.contactWrap').forEach(section => {
+    const elems = section.querySelectorAll('.contact');
+    // Set starting params for sections
+    gsap.set(elems, {
+        y: 50,
+        opacity: 0,
+        duration: 30,
+        ease: 'power3.out',
+        overwrite: 'auto',
+    });
+    
+    ScrollTrigger.create({
+        trigger: section,
+        start: 'top 60%',
+        end: 'bottom 30%',
+    //   markers: true,
+        onEnter: () => gsap.to(elems, {
+        y: 0,
+        opacity: 1,
+        stagger: 0.8,
+        }),
+        onLeave: () => gsap.to(elems, {
+        y: -50,
+        opacity: 0,
+        stagger: 0.8,
+        }),
+        onEnterBack: () => gsap.to(elems, {
+        y: 0,
+        opacity: 1,
+        stagger: 0.8,
+        }),
+        onLeaveBack: () => gsap.to(elems, {
+        y: 50,
+        opacity: 0,
+        stagger: 0.8,
+        }),
+    });
+    })
+}
+})
 
 
 // gsap.registerPlugin(ScrollTrigger);
@@ -141,6 +147,17 @@ window.addEventListener("load", function () {
 
 
 $(function () {
+
+    // $(window).scroll(function () {
+    //     const distanceFromHtml = sec4.getBoundingClientRect().top + window.pageYOffset
+    //     // var divTop = document.querySelector("#sec4").offsetTop;
+    //     console.log("HTML 시작점으로부터의 거리",distanceFromHtml);
+    // }); 
+
+    $(window).scroll(function () {
+        var scrollValue = $(document).scrollTop();
+        console.log(scrollValue);
+    });
 
     var $mainTxt = $('[data-main-text]');
     var maxDuration = 2000;
