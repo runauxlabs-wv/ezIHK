@@ -1,42 +1,82 @@
 
-// gsap.utils.toArray('.talkWrap').forEach(section => {
-//     const elems = section.querySelectorAll('.talk');
-//     // Set starting params for sections
-//     gsap.set(elems, {
-//       y: 50,
-//       opacity: 0,
-//       duration: 1,
-//       ease: 'power3.out',
-//       overwrite: 'auto',
-//     });
+gsap.utils.toArray('.talkWrap').forEach(section => {
+    const elems = section.querySelectorAll('.talkBox');
+    // Set starting params for sections
+    gsap.set(elems, {
+      y: 50,
+      opacity: 0,
+      duration: 10,
+      ease: 'power3.out',
+      overwrite: 'auto',
+    });
     
-//     ScrollTrigger.create({
-//       trigger: section,
-//       start: 'top 60%',
-//       end: 'bottom 30%',
-//       markers: true,
-//       onEnter: () => gsap.to(elems, {
-//         y: 0,
-//         opacity: 1,
-//         stagger: 0.2,
-//       }),
-//       onLeave: () => gsap.to(elems, {
-//         y: -50,
-//         opacity: 0,
-//         stagger: 0.2,
-//       }),
-//       onEnterBack: () => gsap.to(elems, {
-//         y: 0,
-//         opacity: 1,
-//         stagger: -0.2,
-//       }),
-//       onLeaveBack: () => gsap.to(elems, {
-//         y: 50,
-//         opacity: 0,
-//         stagger: -0.2,
-//       }),
-//     });
-//   })
+    ScrollTrigger.create({
+      trigger: section,
+      start: 'top 60%',
+      end: 'bottom 30%',
+    //   markers: true,
+      onEnter: () => gsap.to(elems, {
+        y: 0,
+        opacity: 1,
+        stagger: 0.8,
+      }),
+      onLeave: () => gsap.to(elems, {
+        y: -50,
+        opacity: 0,
+        stagger: 0.8,
+      }),
+      onEnterBack: () => gsap.to(elems, {
+        y: 0,
+        opacity: 1,
+        stagger: 0.8,
+      }),
+      onLeaveBack: () => gsap.to(elems, {
+        y: 50,
+        opacity: 0,
+        stagger: 0.8,
+      }),
+    });
+  })
+
+// gsap.utils.toArray('.contactWrap').forEach(section => {
+// const elems = section.querySelectorAll('.contact');
+// // Set starting params for sections
+// gsap.set(elems, {
+//     y: 50,
+//     opacity: 0,
+//     duration: 1,
+//     ease: 'power3.out',
+//     overwrite: 'auto',
+// });
+
+// ScrollTrigger.create({
+//     trigger: section,
+//     start: 'top 60%',
+//     end: 'bottom 30%',
+// //   markers: true,
+//     onEnter: () => gsap.to(elems, {
+//     y: 0,
+//     opacity: 1,
+//     stagger: 0.2,
+//     }),
+//     onLeave: () => gsap.to(elems, {
+//     y: -50,
+//     opacity: 0,
+//     stagger: 0.2,
+//     }),
+//     // onEnterBack: () => gsap.to(elems, {
+//     // y: 0,
+//     // opacity: 1,
+//     // stagger: 0.2,
+//     // }),
+//     // onLeaveBack: () => gsap.to(elems, {
+//     // y: 50,
+//     // opacity: 0,
+//     // stagger: 0.2,
+//     // }),
+// });
+// })
+
 
 
 // gsap.registerPlugin(ScrollTrigger);
@@ -65,7 +105,7 @@
 //       height: window.innerHeight
 //     };
 //   },
-// //   pinType: pageContainer.style.transform ? "transform" : "fixed"
+//   pinType: pageContainer.style.transform ? "transform" : "fixed"
 // });
 
 ////////////////////////////////////
