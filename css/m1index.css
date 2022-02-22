@@ -1,0 +1,60 @@
+body {
+    width: 100%;
+}
+.inner {
+    width: 95%;
+}
+.sec1::before {
+    width: 77vw;
+    height: 90vh;
+}
+.sec1 > .inner p {
+    right: -200px;
+}
+h2 {
+    font-size: 70px;
+}
+.sec2 {
+    height: auto;
+}
+.sec2 .inner {
+    flex-direction: column;
+}
+.sec2 .textWrap {
+    padding-left: 30px;
+    text-align: center;
+}
+.sec2 h2 + p {
+    display: inline-block;
+    font-size: 35px;
+}
+.sec2 h2 + p::before {
+    top: 18px;
+    left: -90px;
+    font-size: 150px;
+}
+.sec2 h2 + p::after {
+    right: -70px;
+    bottom: 11px;
+    font-size: 150px;
+}
+.talk02, .talk04 {
+    margin-left: 0;
+    float: right;
+}
+.sec4 {
+    overflow: hidden;
+}
+.modal {
+    width: 80%;
+    height: 980px;
+    background-size: cover;
+    background-position: center;
+}
+.sec4 h2 {
+    font-size: 80px;
+    padding-bottom: 50px;
+}
+.sec4 p {
+    font-size: 40px;
+}
