@@ -1,87 +1,89 @@
-
 gsap.utils.toArray('.talkWrap').forEach(section => {
     const elems = section.querySelectorAll('.talkBox');
     // Set starting params for sections
     gsap.set(elems, {
-      y: 50,
-      opacity: 0,
-      duration: 10,
-      ease: 'power3.out',
-      overwrite: 'auto',
-    });
-    
-    ScrollTrigger.create({
-      trigger: section,
-      start: 'top 60%',
-      end: 'bottom 30%',
-    //   markers: true,
-      onEnter: () => gsap.to(elems, {
-        y: 0,
-        opacity: 1,
-        stagger: 0.8,
-      }),
-      onLeave: () => gsap.to(elems, {
-        y: -50,
-        opacity: 0,
-        stagger: 0.8,
-      }),
-      onEnterBack: () => gsap.to(elems, {
-        y: 0,
-        opacity: 1,
-        stagger: 0.8,
-      }),
-      onLeaveBack: () => gsap.to(elems, {
         y: 50,
         opacity: 0,
-        stagger: 0.8,
-      }),
-    });
-  })
-
-  //aos 대신
-window.addEventListener('scroll', () => {
-var scrollLocation = document.documentElement.scrollTop; // 현재 스크롤바 위치
-
-    if (scrollLocation > 8730) {
-    gsap.utils.toArray('.contactWrap').forEach(section => {
-    const elems = section.querySelectorAll('.contact');
-    // Set starting params for sections
-    gsap.set(elems, {
-        y: 50,
-        opacity: 0,
-        duration: 30,
+        duration: 10,
         ease: 'power3.out',
         overwrite: 'auto',
     });
-    
+
     ScrollTrigger.create({
         trigger: section,
         start: 'top 60%',
         end: 'bottom 30%',
-    //   markers: true,
+        //   markers: true,
         onEnter: () => gsap.to(elems, {
-        y: 0,
-        opacity: 1,
-        stagger: 0.8,
+            y: 0,
+            opacity: 1,
+            stagger: 0.8,
         }),
         onLeave: () => gsap.to(elems, {
-        y: -50,
-        opacity: 0,
-        stagger: 0.8,
+            y: -50,
+            opacity: 0,
+            stagger: 0.8,
         }),
         onEnterBack: () => gsap.to(elems, {
-        y: 0,
-        opacity: 1,
-        stagger: 0.8,
+            y: 0,
+            opacity: 1,
+            stagger: 0.8,
         }),
         onLeaveBack: () => gsap.to(elems, {
-        y: 50,
-        opacity: 0,
-        stagger: 0.8,
+            y: 50,
+            opacity: 0,
+            stagger: 0.8,
         }),
     });
-    })
-}
+})
+
+//aos 대신
+
+
+window.addEventListener('scroll', () => {
+    var scrollLocation = document.documentElement.scrollTop; // 현재 스크롤바 위치
+    // if (window.innerWidth > 1899) {
+        if (scrollLocation > 8600) {
+            gsap.utils.toArray('.contactWrap').forEach(section => {
+                const elems = section.querySelectorAll('.contact');
+                // Set starting params for sections
+                gsap.set(elems, {
+                    y: 50,
+                    opacity: 0,
+                    duration: 30,
+                    ease: 'power3.out',
+                    overwrite: 'auto',
+                });
+
+                ScrollTrigger.create({
+                    trigger: section,
+                    start: 'top 60%',
+                    end: 'bottom 30%',
+                    //   markers: true,
+                    onEnter: () => gsap.to(elems, {
+                        y: 0,
+                        opacity: 1,
+                        stagger: 0.8,
+                    }),
+                    onLeave: () => gsap.to(elems, {
+                        y: -50,
+                        opacity: 0,
+                        stagger: 0.8,
+                    }),
+                    onEnterBack: () => gsap.to(elems, {
+                        y: 0,
+                        opacity: 1,
+                        stagger: 0.8,
+                    }),
+                    onLeaveBack: () => gsap.to(elems, {
+                        y: 50,
+                        opacity: 0,
+                        stagger: 0.8,
+                    }),
+                });
+            })
+        }
+    // }
 })
 
 
@@ -153,11 +155,11 @@ $(function () {
     //     // var divTop = document.querySelector("#sec4").offsetTop;
     //     console.log("HTML 시작점으로부터의 거리",distanceFromHtml);
     // }); 
-
-    $(window).scroll(function () {
-        var scrollValue = $(document).scrollTop();
-        console.log(scrollValue);
-    });
+    //스크롤값 구하기
+    // $(window).scroll(function () {
+    //     var scrollValue = $(document).scrollTop();
+    //     console.log(scrollValue);
+    // });
 
     var $mainTxt = $('[data-main-text]');
     var maxDuration = 2000;
@@ -227,6 +229,6 @@ $(function () {
     $(".modal").click(function () {
         $(".background").removeClass('show');
         body.removeClass('scrollLock');
-        
+
     });
 });
