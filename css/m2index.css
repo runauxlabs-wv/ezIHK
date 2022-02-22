@@ -4,15 +4,20 @@ body {
 .inner {
     width: 95%;
 }
-.sec1, .sec4 {
-    height: 500px;
-}
 .sec1::before,
 .sec4::before {
    content: none;
 }
+.sec1 .inner {
+    height: 100%;
+}
 .mainTxt {
+    width: 100%;
     padding: 20px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .mainTxt .text {
     text-align: center;
@@ -27,13 +32,13 @@ body {
     right: -130px;
     font-size: 12px;
     letter-spacing: 5px;
-    bottom: -60px;
+    bottom: 140px;
 }
 .sec1 > .inner > .leftWrap > span:first-child {
     font-size: 20px;
 }
 h2 {
-    font-size: 50px;
+    font-size: 45px;
 }
 .sec2 {
     height: auto;
@@ -76,11 +81,28 @@ h2 {
     margin-left: 0;
     float: right;
 }
+.sec3 .project {
+    width: 1560px;
+}
+.project .textWrap {
+    padding-bottom: 15px;
+}
 .project h3 {
-    font-size: 35px;
+    font-size: 30px;
+}
+.project h4 {
+    padding-bottom: 10px;
 }
 .project h4 + p {
     font-size: 14px;
+}
+.project .left .wrap {
+    padding-top: 20px;
+}
+.project .device {
+    width: 670px;
+    height: 455px;
+    image-rendering: auto;
 }
 .sec4 {
     overflow: hidden;

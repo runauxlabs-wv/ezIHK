@@ -201,6 +201,8 @@ h2 {
     width: 1920px;
     height: 100vh;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 .sec3 .projectA {
     background: url(/portfolio/img/projectBg1.jpg) no-repeat center / cover;
@@ -218,11 +220,11 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 13%;
+    padding-top: 0;
+    align-items: center;
 }
 .project .inner h2 {
-    position: absolute;
-    top: 13%;
+    padding-bottom: 30px;
 }
 .project .textWrap {
     display: flex;
@@ -377,14 +379,14 @@ h2 {
     background: url(/portfolio/img/Internet_Explorer_ICON.png) no-repeat center / cover;
 }
 .project .device {
-    /* width: 810px;
-    height: 546px; */
+    width: 810px;
+    height: 546px;
     image-rendering: pixelated;
 }
-/* .projectA .device {
+.projectA .device {
     background: url(/portfolio/img/lulu.png) no-repeat center / cover;
-} */
-/* .projectB .device {
+}
+.projectB .device {
     background: url(/portfolio/img/minwon.png) no-repeat center / cover;
 }
 .projectC .device {
@@ -392,7 +394,7 @@ h2 {
 }
 .projectD .device {
     background: url(/portfolio/img/santamaria.png) no-repeat center / cover;
-} */
+}
 .sec4::before {
     width: 1920px;
     height: 582px;
