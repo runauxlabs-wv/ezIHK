@@ -69,11 +69,11 @@ h2 {
 }
 .talkWrap .talk {
     width: 100%;
-    height: 125px;
+    height: 35vw;
     background-size: contain;
 }
 .talkWrap .talk span {
-    font-size: 13px;
+    font-size: 14px;
     padding: 0 25px;
     word-break: keep-all;
 }
