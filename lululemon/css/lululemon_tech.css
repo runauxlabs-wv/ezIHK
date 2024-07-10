@@ -6,10 +6,10 @@
 /* fontawesome */
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
 /* 구글아이콘 */
-@import url('/portfolio/lululemon/lib/slick-1.8.1/slick/slick.css');
-@import url('/portfolio/lululemon/lib/slick-1.8.1/slick/slick-theme.css');
+@import url('/ezIHK/lululemon/lib/slick-1.8.1/slick/slick.css');
+@import url('/ezIHK/lululemon/lib/slick-1.8.1/slick/slick-theme.css');
 /* slick css */
-@import url('/portfolio/lululemon/css/IE_lululemon.css');
+@import url('/ezIHK/lululemon/css/IE_lululemon.css');
 /* IE cross browsing */
 
 * {
@@ -94,7 +94,7 @@ header > .inner {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     padding: 5px;
-} 
+}
 .nav li a:hover, header.on .nav li a:hover {
     color: #D0112B;
     transition: all 0.2s;
@@ -116,7 +116,7 @@ header .logo {
 .cateBanner {
     width: 100%;
     height: 845px;
-    background: url(/portfolio/lululemon/img/tech/Feb8_ProductStory_ImageComponent_2.jpg) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/Feb8_ProductStory_ImageComponent_2.jpg) no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -204,7 +204,7 @@ header .logo {
     right: -3px;
 }
 .tab > .inner > ul > li > a:hover::after {
-    width:100%;
+    width: 100%;
     height: 2px;
     background-color: #D0112B;
     transition: all 0.5s ease;
@@ -233,7 +233,7 @@ header .logo {
     display: none;
 }
 .luon_fabric {
-    background: url(/portfolio/lululemon/img/tech/luon/luon.jpg) 50% 50% no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luon/luon.jpg) 50% 50% no-repeat;
     background-size: cover;
 }
 .fabric_txt p {
@@ -263,43 +263,43 @@ header .logo {
     transition: all 0.5s ease;
 }
 .fabric_txt > .icon > .soft {
-    background: url(/portfolio/lululemon/img/icon/soft.png) no-repeat center;
+    background: url(/ezIHK/lululemon/img/icon/soft.png) no-repeat center;
     background-size: 115px;
 }
 .fabric_txt > .icon > .stretch {
-    background: url(/portfolio/lululemon/img/icon/stretch.png) no-repeat center;
+    background: url(/ezIHK/lululemon/img/icon/stretch.png) no-repeat center;
     background-size: 115px;
 }
 .fabric_txt > .icon > .sweat {
-    background: url(/portfolio/lululemon/img/icon/sweat.png) no-repeat center;
+    background: url(/ezIHK/lululemon/img/icon/sweat.png) no-repeat center;
     background-size: 115px;
 }
 .fabric_txt > .icon > .pressure {
-    background: url(/portfolio/lululemon/img/icon/pressure.png) no-repeat center;
+    background: url(/ezIHK/lululemon/img/icon/pressure.png) no-repeat center;
     background-size: 115px;
 }
 .fabric_txt > .icon > .breathability {
-    background: url(/portfolio/lululemon/img/icon/breathability.png) no-repeat center;
+    background: url(/ezIHK/lululemon/img/icon/breathability.png) no-repeat center;
     background-size: 115px;
 }
 .fabric_txt > .icon > .durability {
-    background: url(/portfolio/lululemon/img/icon/durability.png) no-repeat center;
+    background: url(/ezIHK/lululemon/img/icon/durability.png) no-repeat center;
     background-size: 115px;
 }
 .fabric_txt > .icon > .antibacterial {
-    background: url(/portfolio/lululemon/img/icon/Antibacterial.png) no-repeat center;
+    background: url(/ezIHK/lululemon/img/icon/Antibacterial.png) no-repeat center;
     background-size: 115px;
 }
 .fabric_txt > .icon > .smelling {
-    background: url(/portfolio/lululemon/img/icon/Smelling.png) no-repeat center;
+    background: url(/ezIHK/lululemon/img/icon/Smelling.png) no-repeat center;
     background-size: 115px;
 }
 .fabric_txt > .icon > .light {
-    background: url(/portfolio/lululemon/img/icon/light.png) no-repeat center;
+    background: url(/ezIHK/lululemon/img/icon/light.png) no-repeat center;
     background-size: 115px;
 }
 .fabric_txt > .icon > .dry {
-    background: url(/portfolio/lululemon/img/icon/Dry.png) no-repeat center;
+    background: url(/ezIHK/lululemon/img/icon/Dry.png) no-repeat center;
     background-size: 115px;
 }
 .fabric_txt > .icon > li > span {
@@ -343,7 +343,7 @@ header .logo {
     height: 374px;
 }
 .fittingCut > .luon_img1 {
-    background: url(/portfolio/lululemon/img/tech/luon/다운로드1.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luon/다운로드1.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -402,7 +402,7 @@ header .logo {
     left: 109%;
 }
 .fittingCut > .luon_img2 {
-    background: url(/portfolio/lululemon/img/tech/luon/다운로드2.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luon/다운로드2.png) no-repeat;
     background-size: cover;
 }
 .fittingCut > .imgWrap {
@@ -413,12 +413,12 @@ header .logo {
     left: -150px;
 }
 .fittingCut > .imgWrap > .luon_img3 {
-    background: url(/portfolio/lululemon/img/tech/luon/다운로드3.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luon/다운로드3.png) no-repeat;
     background-size: cover;
     background-position: right;
 }
 .fittingCut > .imgWrap > .luon_img4 {
-    background: url(/portfolio/lululemon/img/tech/luon/다운로드4.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luon/다운로드4.png) no-repeat;
     background-size: cover;
 }
 .fullBg {
@@ -427,8 +427,8 @@ header .logo {
     align-items: flex-end;
     margin-bottom: 300px;
 }
-.fullBg1{
-    background: url(/portfolio/lululemon/img/tech/luon/Rectangle106.png) no-repeat;
+.fullBg1 {
+    background: url(/ezIHK/lululemon/img/tech/luon/Rectangle106.png) no-repeat;
     background-size: cover;
 }
 .fullBg > .productSlide {
@@ -494,30 +494,30 @@ header .logo {
 }
 .slideWrap .product_img:hover::before {
     background-color: rgba(0, 0, 0, 0.3);
-        transition: all 0.7s ease;
+    transition: all 0.7s ease;
 }
 .product_img1-1 {
-    background: url(/portfolio/lululemon/img/tech/luon/원더언더크롭누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luon/원더언더크롭누끼.png) no-repeat;
     background-size: cover;
 }
 .product_img1-2 {
-    background: url(/portfolio/lululemon/img/tech/luon/디파인자켓누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luon/디파인자켓누끼.png) no-repeat;
     background-size: cover;
 }
 .product_img1-3 {
-    background: url(/portfolio/lululemon/img/tech/luon/Power-Y-Tanks2누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luon/Power-Y-Tanks2누끼.png) no-repeat;
     background-size: cover;
 }
 .product_img1-4 {
-    background: url(/portfolio/lululemon/img/tech/luon/원더언더크롭-하이라이즈누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luon/원더언더크롭-하이라이즈누끼.png) no-repeat;
     background-size: cover;
 }
 .product_img1-5 {
-    background: url(/portfolio/lululemon/img/tech/luon/플라이-어웨이-테이머-헤드밴드-II누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luon/플라이-어웨이-테이머-헤드밴드-II누끼.png) no-repeat;
     background-size: cover;
 }
 .product_img1-6 {
-    background: url(/portfolio/lululemon/img/tech/luon/원더언더HR타이츠누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luon/원더언더HR타이츠누끼.png) no-repeat;
     background-size: cover;
 }
 .slideWrap .product_txt {
@@ -541,7 +541,7 @@ header .logo {
 .slideWrap .product_img:hover .product_txt {
     transform: translateY(0);
     transition: all 0.7s ease;
-} 
+}
 .slideWrap .product_txt p:first-child {
     font-size: 14px;
     font-weight: 500;
@@ -551,261 +551,261 @@ header .logo {
     font-size: 12px;
 }
 .slick-slide {
-  margin: 0 10px;
+    margin: 0 10px;
 }
 .slick-list {
     width: 1030px;
 }
 .luxtreme_fabric {
-    background: url(/portfolio/lululemon/img/tech/luxtreme/Luxtreme.jpg) 50% 50% no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luxtreme/Luxtreme.jpg) 50% 50% no-repeat;
     background-size: cover;
 }
 .luxtreme_img1 {
-    background: url(/portfolio/lululemon/img/tech/luxtreme/luxtreme1-1.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luxtreme/luxtreme1-1.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .luxtreme_img2 {
-    background: url(/portfolio/lululemon/img/tech/luxtreme/luxtreme1-2.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luxtreme/luxtreme1-2.png) no-repeat;
     background-size: cover;
 }
 .luxtreme_img3 {
-    background: url(/portfolio/lululemon/img/tech/luxtreme/luxtreme1-3.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luxtreme/luxtreme1-3.png) no-repeat;
     background-size: cover;
 }
 .luxtreme_img4 {
-    background: url(/portfolio/lululemon/img/tech/luxtreme/luxtreme1-4.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luxtreme/luxtreme1-4.png) no-repeat;
     background-size: cover;
 }
 .fullBg2 {
-    background: url(/portfolio/lululemon/img/tech/luxtreme/luxtreme1-5.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luxtreme/luxtreme1-5.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .product_img2-1 {
-    background: url(/portfolio/lululemon/img/tech/luxtreme/wunder-under-high-rise-crop누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luxtreme/wunder-under-high-rise-crop누끼.png) no-repeat;
     background-size: cover;
 }
 .product_img2-2 {
-    background: url(/portfolio/lululemon/img/tech/luxtreme/프리투비세린브라누기.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luxtreme/프리투비세린브라누기.png) no-repeat;
     background-size: cover;
 }
 .product_img2-3 {
-    background: url(/portfolio/lululemon/img/tech/luxtreme/온더플라이MR-쇼츠누기.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luxtreme/온더플라이MR-쇼츠누기.png) no-repeat;
     background-size: cover;
 }
 .product_img2-4 {
-    background: url(/portfolio/lululemon/img/tech/luxtreme/에너지브라롱라인누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luxtreme/에너지브라롱라인누끼.png) no-repeat;
     background-size: cover;
 }
 .product_img2-5 {
-    background: url(/portfolio/lululemon/img/tech/luxtreme/원더트레인-크롭롱슬리브누끼.jpg) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luxtreme/원더트레인-크롭롱슬리브누끼.jpg) no-repeat;
     background-size: cover;
 }
 .product_img2-6 {
-    background: url(/portfolio/lululemon/img/tech/luxtreme/에너지브라누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/luxtreme/에너지브라누끼.png) no-repeat;
     background-size: cover;
 }
 .silverescent_fabric {
-    background: url(/portfolio/lululemon/img/tech/SILVERESCENT/Silverescent11.jpg) 50% 50% no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/SILVERESCENT/Silverescent11.jpg) 50% 50% no-repeat;
     background-size: cover;
 }
 .silverescent_img1 {
-    background: url(/portfolio/lululemon/img/tech/SILVERESCENT/SILVERESCENT1.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/SILVERESCENT/SILVERESCENT1.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .silverescent_img2 {
-    background: url(/portfolio/lululemon/img/tech/SILVERESCENT/SILVERESCENT2.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/SILVERESCENT/SILVERESCENT2.png) no-repeat;
     background-size: cover;
 }
 .silverescent_img3 {
-    background: url(/portfolio/lululemon/img/tech/SILVERESCENT/SILVERESCENT3.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/SILVERESCENT/SILVERESCENT3.png) no-repeat;
     background-size: cover;
 }
 .silverescent_img4 {
-    background: url(/portfolio/lululemon/img/tech/SILVERESCENT/SILVERESCENT4.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/SILVERESCENT/SILVERESCENT4.png) no-repeat;
     background-size: cover;
 }
 .fullBg3 {
-    background: url(/portfolio/lululemon/img/tech/SILVERESCENT/SILVERESCENT5.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/SILVERESCENT/SILVERESCENT5.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .product_img3-1 {
-    background: url(/portfolio/lululemon/img/tech/SILVERESCENT/스위프틀리테크숏슬리브누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/SILVERESCENT/스위프틀리테크숏슬리브누끼.png) no-repeat;
     background-size: cover;
 }
 .product_img3-2 {
-    background: url(/portfolio/lululemon/img/tech/SILVERESCENT/스위프틀리-테크-집누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/SILVERESCENT/스위프틀리-테크-집누끼.png) no-repeat;
     background-size: cover;
 }
 .product_img3-3 {
-    background: url(/portfolio/lululemon/img/tech/SILVERESCENT/스위프틀리-테크-레이서백누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/SILVERESCENT/스위프틀리-테크-레이서백누끼.png) no-repeat;
     background-size: cover;
 }
 .product_img3-4 {
-    background: url(/portfolio/lululemon/img/tech/SILVERESCENT/스위프틀리테크롱슬리브누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/SILVERESCENT/스위프틀리테크롱슬리브누끼.png) no-repeat;
     background-size: cover;
 }
 .product_img3-5 {
-    background: url(/portfolio/lululemon/img/tech/SILVERESCENT/스위프틀리-브리드-크롭탱크누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/SILVERESCENT/스위프틀리-브리드-크롭탱크누끼.png) no-repeat;
     background-size: cover;
 }
 .product_img3-6 {
-    background: url(/portfolio/lululemon/img/tech/SILVERESCENT/브리드롱슬리브누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/SILVERESCENT/브리드롱슬리브누끼.png) no-repeat;
     background-size: cover;
 }
 .nulu_fabric {
-    background: url(/portfolio/lululemon/img/tech/nulu/nulu11.jpg) 50% 50% no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulu/nulu11.jpg) 50% 50% no-repeat;
     background-size: cover;
 }
 .nulu_img1 {
-    background: url(/portfolio/lululemon/img/tech/nulu/nulu1.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulu/nulu1.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .nulu_img2 {
-    background: url(/portfolio/lululemon/img/tech/nulu/nulu2.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulu/nulu2.png) no-repeat;
     background-size: cover;
 }
 .nulu_img3 {
-    background: url(/portfolio/lululemon/img/tech/nulu/nulu5.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulu/nulu5.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .nulu_img4 {
-    background: url(/portfolio/lululemon/img/tech/nulu/nulu4.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulu/nulu4.png) no-repeat;
     background-size: cover;
 }
 .fullBg4 {
-    background: url(/portfolio/lululemon/img/tech/nulu/nulu3.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulu/nulu3.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .product_img4-1 {
-    background: url(/portfolio/lululemon/img/tech/nulu/그루브팬츠-플레어누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulu/그루브팬츠-플레어누끼.png) no-repeat;
     background-size: cover;
 }
 .product_img4-2 {
-    background: url(/portfolio/lululemon/img/tech/nulu/후드디파인재킷누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulu/후드디파인재킷누끼.png) no-repeat;
     background-size: cover;
 }
 .product_img4-3 {
-    background: url(/portfolio/lululemon/img/tech/nulu/룰루레몬-얼라인조거28누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulu/룰루레몬-얼라인조거28누끼.png) no-repeat;
     background-size: cover;
 }
 .product_img4-4 {
-    background: url(/portfolio/lululemon/img/tech/nulu/플로우Y브라누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulu/플로우Y브라누끼.png) no-repeat;
     background-size: cover;
 }
 .product_img4-5 {
-    background: url(/portfolio/lululemon/img/tech/nulu/얼라인HR크롭23누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulu/얼라인HR크롭23누끼.png) no-repeat;
     background-size: cover;
 }
 .product_img4-6 {
-    background: url(/portfolio/lululemon/img/tech/nulu/프리투비탱크누끼.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulu/프리투비탱크누끼.png) no-repeat;
     background-size: cover;
 }
 .nulux_fabric {
-    background: url(/portfolio/lululemon/img/tech/nulux/nulux11.jpg) 50% 50% no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulux/nulux11.jpg) 50% 50% no-repeat;
     background-size: cover;
 }
 .nulux_img1 {
-    background: url(/portfolio/lululemon/img/tech/nulux/nulux1.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulux/nulux1.png) no-repeat;
     background-size: cover;
     background-position: 96%;
 }
 .nulux_img2 {
-    background: url(/portfolio/lululemon/img/tech/nulux/nulux4.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulux/nulux4.png) no-repeat;
     background-size: cover;
 }
 .nulux_img3 {
-    background: url(/portfolio/lululemon/img/tech/nulux/nulux3.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulux/nulux3.png) no-repeat;
     background-size: cover;
 }
 .nulux_img4 {
-    background: url(/portfolio/lululemon/img/tech/nulux/nulux5.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulux/nulux5.png) no-repeat;
     background-size: cover;
 }
 .fullBg5 {
-    background: url(/portfolio/lululemon/img/tech/nulux/nulux2.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulux/nulux2.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .product_img5-1 {
-    background: url(/portfolio/lululemon/img/tech/nulux/UVP런재킷누끼1.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulux/UVP런재킷누끼1.png) no-repeat;
     background-size: cover;
 }
 .product_img5-2 {
-    background: url(/portfolio/lululemon/img/tech/nulux/패스트앤프리타이츠누끼2.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulux/패스트앤프리타이츠누끼2.png) no-repeat;
     background-size: cover;
 }
 .product_img5-3 {
-    background: url(/portfolio/lululemon/img/tech/nulux/디파인자켓누끼3.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulux/디파인자켓누끼3.png) no-repeat;
     background-size: cover;
 }
 .product_img5-4 {
-    background: url(/portfolio/lululemon/img/tech/nulux/T.H.E쇼츠누끼4.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulux/T.H.E쇼츠누끼4.png) no-repeat;
     background-size: cover;
 }
 .product_img5-5 {
-    background: url(/portfolio/lululemon/img/tech/nulux/써지타이즈누끼5.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulux/써지타이즈누끼5.png) no-repeat;
     background-size: cover;
 }
 .product_img5-6 {
-    background: url(/portfolio/lululemon/img/tech/nulux/패스트앤프리쇼츠누끼6.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/nulux/패스트앤프리쇼츠누끼6.png) no-repeat;
     background-size: cover;
 }
 .everlux_fabric {
-    background: url(/portfolio/lululemon/img/tech/everlux/Everlux11.jpg) 50% 50% no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/everlux/Everlux11.jpg) 50% 50% no-repeat;
     background-size: cover;
 }
 .everlux_img1 {
-    background: url(/portfolio/lululemon/img/tech/everlux/everlux1.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/everlux/everlux1.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .everlux_img2 {
-    background: url(/portfolio/lululemon/img/tech/everlux/everlux2.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/everlux/everlux2.png) no-repeat;
     background-size: cover;
 }
 .everlux_img3 {
-    background: url(/portfolio/lululemon/img/tech/everlux/everlux3.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/everlux/everlux3.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .everlux_img4 {
-    background: url(/portfolio/lululemon/img/tech/everlux/everlux4.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/everlux/everlux4.png) no-repeat;
     background-size: cover;
 }
 .fullBg6 {
-    background: url(/portfolio/lululemon/img/tech/everlux/everlux5.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/everlux/everlux5.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .product_img6-1 {
-    background: url(/portfolio/lululemon/img/tech/everlux/원더트레인하이라이즈크롭누끼1.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/everlux/원더트레인하이라이즈크롭누끼1.png) no-repeat;
     background-size: cover;
 }
 .product_img6-2 {
-    background: url(/portfolio/lululemon/img/tech/everlux/컷아웃트레인브라누끼2.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/everlux/컷아웃트레인브라누끼2.png) no-repeat;
     background-size: cover;
 }
 .product_img6-3 {
-    background: url(/portfolio/lululemon/img/tech/everlux/밸런서팬츠누끼3.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/everlux/밸런서팬츠누끼3.png) no-repeat;
     background-size: cover;
 }
 .product_img6-4 {
-    background: url(/portfolio/lululemon/img/tech/everlux/파워피봇탱크탑누끼4.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/everlux/파워피봇탱크탑누끼4.png) no-repeat;
     background-size: cover;
 }
 .product_img6-5 {
-    background: url(/portfolio/lululemon/img/tech/everlux/파워Y탱크누끼5.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/everlux/파워Y탱크누끼5.png) no-repeat;
     background-size: cover;
 }
 .product_img6-6 {
-    background: url(/portfolio/lululemon/img/tech/everlux/앤메쉬크롭숏슬리브누끼6.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/tech/everlux/앤메쉬크롭숏슬리브누끼6.png) no-repeat;
     background-size: cover;
 }
 footer {
@@ -838,7 +838,7 @@ footer > .inner {
     display: flex;
     flex-direction: row;
 }
-.footer_txt > ul >li {
+.footer_txt > ul > li {
     margin-right: 10px;
 }
 footer a {

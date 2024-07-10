@@ -97,7 +97,7 @@ nav > .navWrap > .subgnb > li.on {
     margin: 10px 0 0 0;
 }
 .section1 {
-    background: url(/portfolio/woojeong/img/main03-1.png) no-repeat center / cover;
+    background: url(/ezIHK/woojeong/img/main03-1.png) no-repeat center / cover;
 }
 .section1 .textWrap {
     top: 22%;
@@ -182,7 +182,7 @@ h2 {
     padding-bottom: 35px;
 }
 .section2 .col {
-    width: calc(( 100% - 4px ) / 2 );
+    width: calc((100% - 4px) / 2);
     padding: 0;
 }
 .section2 .col1 {
@@ -216,7 +216,7 @@ h2 {
 }
 .tabButton.on {
     border: 0;
-    box-shadow: 0 0 0 2px #EE2D23 inset; 
+    box-shadow: 0 0 0 2px #EE2D23 inset;
 }
 .tabButton span {
     display: none;
@@ -253,7 +253,7 @@ h2 {
     padding-bottom: 0;
 }
 .section3 .textWrap > p br {
-    display: none;   
+    display: none;
 }
 .moreView {
     font-size: 14px;
@@ -384,7 +384,7 @@ footer .textWrap > p:first-child {
 }
 .hamberger {
     display: inline-block;
-    background: url(/portfolio/woojeong/img/sort.svg) no-repeat center / cover;
+    background: url(/ezIHK/woojeong/img/sort.svg) no-repeat center / cover;
     width: 40px;
     height: 42px;
 }

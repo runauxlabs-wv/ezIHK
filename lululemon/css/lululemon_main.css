@@ -6,10 +6,10 @@
 /* fontawesome */
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
 /* 구글아이콘 */
-@import url('/portfolio/lululemon/lib/slick-1.8.1/slick/slick.css');
-@import url('/portfolio/lululemon/lib/slick-1.8.1/slick/slick-theme.css');
+@import url('/ezIHK/lululemon/lib/slick-1.8.1/slick/slick.css');
+@import url('/ezIHK/lululemon/lib/slick-1.8.1/slick/slick-theme.css');
 /* slick css */
-@import url('/portfolio/lululemon/css/IE_lululemon.css');
+@import url('/ezIHK/lululemon/css/IE_lululemon.css');
 /* IE cross browsing */
 
 
@@ -81,7 +81,7 @@ header > .inner {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     padding: 5px;
-} 
+}
 .nav li a:hover, header.on .nav li a:hover {
     color: #D0112B;
     transition: all 0.2s;
@@ -120,7 +120,7 @@ h1 {
     border: 0;
 }
 .brandStory {
-    background: url(/portfolio/lululemon/img/main/main_1_halftone.jpg) no-repeat;
+    background: url(/ezIHK/lululemon/img/main/main_1_halftone.jpg) no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -139,7 +139,7 @@ h2 {
     padding-bottom: 30px;
     text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
     position: relative;
-} 
+}
 h2::after {
     content: "";
     width: 10px;
@@ -150,14 +150,14 @@ h2::after {
     position: absolute;
     bottom: 40px;
 }
-.main_txt > p , .tech_txt > p , .career_txt > p {
+.main_txt > p, .tech_txt > p, .career_txt > p {
     font-size: 20px;
     color: #fff;
     font-weight: 300;
     padding-bottom: 20px;
     letter-spacing: 0.5px;
 }
-.main_txt > p:first-of-type , .tech_txt > p:first-of-type , .career_txt > p:first-of-type {
+.main_txt > p:first-of-type, .tech_txt > p:first-of-type, .career_txt > p:first-of-type {
     font-weight: 400;
 }
 .moreView {
@@ -182,7 +182,7 @@ h2::after {
 }
 .sec {
     width: 100%;
-    background: url(/portfolio/lululemon/img/main/sec2_33.jpg) no-repeat;
+    background: url(/ezIHK/lululemon/img/main/sec2_33.jpg) no-repeat;
     background-size: cover;
 }
 .sec > .tech {
@@ -249,27 +249,27 @@ h2::after {
     position: relative;
 }
 .news > .inner > .banner > .img_ba > .baWrap .ba1 {
-    background: url(/portfolio/lululemon/img/news/photo-1627483297886-49710ae1fc22.jpg) no-repeat;
+    background: url(/ezIHK/lululemon/img/news/photo-1627483297886-49710ae1fc22.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .news > .inner > .banner > .img_ba > .baWrap .ba2 {
-    background: url(/portfolio/lululemon/img/news/photo-1612685179841-3965cf0c3f70.jpg) no-repeat;
+    background: url(/ezIHK/lululemon/img/news/photo-1612685179841-3965cf0c3f70.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .news > .inner > .banner > .img_ba > .baWrap .ba3 {
-    background: url(/portfolio/lululemon/img/news/9ed7de5c9fd01a9b561c1bb71b95061ca0337926-1600x160022.jpg) no-repeat;
+    background: url(/ezIHK/lululemon/img/news/9ed7de5c9fd01a9b561c1bb71b95061ca0337926-1600x160022.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .news > .inner > .banner > .img_ba > .baWrap .ba4 {
-    background: url(/portfolio/lululemon/img/news/photo-1552083375-1447ce886485.jpg) no-repeat;
+    background: url(/ezIHK/lululemon/img/news/photo-1552083375-1447ce886485.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .news > .inner > .banner > .img_ba > .baWrap .ba5 {
-    background: url(/portfolio/lululemon/img/news/LikeNew_MediaHubJuneMega2.png) no-repeat;
+    background: url(/ezIHK/lululemon/img/news/LikeNew_MediaHubJuneMega2.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -357,7 +357,7 @@ h2::after {
 .banner > .text_ba h3 {
     font-size: 36px;
     color: #000;
-    text-transform:capitalize;
+    text-transform: capitalize;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
@@ -372,7 +372,7 @@ h2::after {
     left: 96px;
 }
 .text_ba .plus_icon {
-    background: url(/portfolio/lululemon/img/icon/plus2.png);
+    background: url(/ezIHK/lululemon/img/icon/plus2.png);
     width: 26px;
     height: 26px;
     background-size: cover;
@@ -432,7 +432,7 @@ h2::after {
 }
 .career {
     height: 100vh;
-    background: url(/portfolio/lululemon/img/main/career.png);
+    background: url(/ezIHK/lululemon/img/main/career.png);
     background-size: cover;
 }
 .career_txt {
@@ -475,7 +475,7 @@ footer > .inner {
     display: flex;
     flex-direction: row;
 }
-.footer_txt > ul >li {
+.footer_txt > ul > li {
     margin-right: 10px;
 }
 footer a {

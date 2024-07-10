@@ -137,12 +137,12 @@ body {
 .logo {
     width: 166px;
     height: 29px;
-    background: url(/portfolio/minwon_police/img/logo.png) no-repeat center / cover;
+    background: url(/ezIHK/minwon_police/img/logo.png) no-repeat center / cover;
 }
 .main {
     height: 480px;
     padding-top: 60px;
-    background: url(/portfolio/minwon_police/img/bg_02.jpg) no-repeat center / cover;
+    background: url(/ezIHK/minwon_police/img/bg_02.jpg) no-repeat center / cover;
 }
 .main::before {
     height: 420px;
@@ -204,7 +204,7 @@ h2 {
 }
 .qna::after {
     box-shadow: 60px 0px #003a5e, 88px 0px #7f9cae;
-}  
+}
 .qna::before {
     box-shadow: -89px 0px #32617e, -126px 0px #7f9cae;
 }
@@ -239,7 +239,7 @@ h2 {
     font-size: 14px;
 }
 .articleWrap {
-    flex:none;
+    flex: none;
     padding-bottom: 0;
 }
 .article > .inner {

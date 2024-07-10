@@ -37,19 +37,19 @@
     display: block;
 }
 
-.is-ie .contents .aco>.titleWrap {
+.is-ie .contents .aco > .titleWrap {
     float: left;
 }
 
-.is-ie .contents .aco>.contentsBt {
+.is-ie .contents .aco > .contentsBt {
     float: right;
 }
 
-.is-ie .cirWrap>span {
+.is-ie .cirWrap > span {
     margin-right: 25px;
 }
 
-.is-ie .cirWrap>span:last-child {
+.is-ie .cirWrap > span:last-child {
     margin-right: auto;
 }
 
@@ -63,32 +63,32 @@
 .ie9 .top_right li,
 .ie9 .top_right,
 .ie9 .zoom,
-.ie9 .header_bottom>.inner .logo,
+.ie9 .header_bottom > .inner .logo,
 .ie9 .nav li,
 .ie9 .sub,
-.ie9 .frequentSurvice>.inner>.menuWrap a,
+.ie9 .frequentSurvice > .inner > .menuWrap a,
 .ie9 .tab li,
-.ie9 .contents>.conBox>li,
+.ie9 .contents > .conBox > li,
 .ie9 .articleWrap,
 .ie9 .call,
 .ie9 .slide,
 .ie9 .notice a,
-.ie9 .articleWrap>.txtWrap h3,
+.ie9 .articleWrap > .txtWrap h3,
 .ie9 .info,
-.ie9 .footerTop>.footer_link,
+.ie9 .footerTop > .footer_link,
 .ie9 aside,
 .ie9 .breadcrumbs li,
 .ie9 .subTab li {
     float: left;
 }
 
-.ie9 .header_bottom>.inner .gnb,
+.ie9 .header_bottom > .inner .gnb,
 .ie9 .header_top .top_right_wrap,
 .ie9 .gnbsub .inner .subWrap,
 .ie9 .notice span,
-.ie9 .articleWrap>.txtWrap .moreView,
+.ie9 .articleWrap > .txtWrap .moreView,
 .ie9 .info .bt,
-.ie9 .footerTop>.site_go,
+.ie9 .footerTop > .site_go,
 .ie9 .contents,
 .ie9 .breadcrumbs {
     float: right;
@@ -96,9 +96,9 @@
 
 .ie9 .top_right,
 .ie9 .zoom,
-.ie9 .header_bottom>.inner .logo,
-.ie9 .tabWrap .contents>ul>li>a,
-.ie9 .articleWrap>.txtWrap .moreView {
+.ie9 .header_bottom > .inner .logo,
+.ie9 .tabWrap .contents > ul > li > a,
+.ie9 .articleWrap > .txtWrap .moreView {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -108,7 +108,7 @@
     height: 100%;
 }
 
-.ie9 .header_bottom>.inner {
+.ie9 .header_bottom > .inner {
     height: 82px;
 }
 
@@ -125,11 +125,11 @@
     display: block;
 }
 
-.ie9 .frequentSurvice>.inner a {
+.ie9 .frequentSurvice > .inner a {
     margin-right: 96px;
 }
 
-.ie9 .frequentSurvice>.inner a:last-of-type {
+.ie9 .frequentSurvice > .inner a:last-of-type {
     margin-right: 0;
 }
 
@@ -151,16 +151,16 @@
     vertical-align: middle;
 }
 
-.ie9 .contents>.on.conBox {
+.ie9 .contents > .on.conBox {
     display: block;
 }
 
-.ie9 .tabWrap .contents>ul>li::after,
-.ie9 .tabWrap .contents>ul>li::before {
+.ie9 .tabWrap .contents > ul > li::after,
+.ie9 .tabWrap .contents > ul > li::before {
     content: none;
 }
 
-.ie9 .tabWrap .contents>ul>li:hover {
+.ie9 .tabWrap .contents > ul > li:hover {
     border: 1px solid #003A5E;
 }
 
@@ -176,7 +176,7 @@
     width: 327px;
 }
 
-.ie9 .articleWrap>.txtWrap {
+.ie9 .articleWrap > .txtWrap {
     height: 51px;
 }
 
@@ -202,15 +202,15 @@
     margin-right: 10px;
 }
 
-.ie9 .site_go>.btWrap>button::after {
+.ie9 .site_go > .btWrap > button::after {
     vertical-align: bottom;
 }
 
-.ie9 .breadcrumbs>li:first-child span {
+.ie9 .breadcrumbs > li:first-child span {
     width: 24px;
     height: 24px;
     display: inline-block;
-    background: url(/portfolio/minwon_police/img/경찰민원아이콘/home.svg) no-repeat;
+    background: url(/ezIHK/minwon_police/img/경찰민원아이콘/home.svg) no-repeat;
 }
 
 .ie9 aside {
@@ -221,7 +221,7 @@
     width: 905px;
 }
 
-.ie9 .cirWrap>span {
+.ie9 .cirWrap > span {
     display: block;
     float: left;
 }
@@ -243,11 +243,11 @@
 }
 
 /* -------------ie10----------------- */
-.ie10 .frequentSurvice>.inner a {
+.ie10 .frequentSurvice > .inner a {
     margin-right: 96px;
 }
 
-.ie10 .frequentSurvice>.inner a:last-of-type {
+.ie10 .frequentSurvice > .inner a:last-of-type {
     margin-right: 0;
 }
 
@@ -258,7 +258,7 @@
     .ie9 .close {
         width: 33px;
         height: 33px;
-        background: url(/portfolio/minwon_police/img/경찰민원아이콘/close.svg) no-repeat;
+        background: url(/ezIHK/minwon_police/img/경찰민원아이콘/close.svg) no-repeat;
     }
 
     .ie9 .header_top .top_right_wrap {
@@ -356,7 +356,7 @@
 }
 @media screen and (max-width:767px) {
     .ie11 .gnbsub .sub {
-    padding-left: 20px;
+        padding-left: 20px;
     }
     .is-ie .frequentSurvice > .inner a {
         width: calc(99% / 3);
@@ -393,8 +393,8 @@
     .is-ie .cirWrap > span:last-child {
         margin-right: auto;
     }
-    .ie9 .footerTop>.footer_link,
-    .ie9 .footerTop>.site_go {
+    .ie9 .footerTop > .footer_link,
+    .ie9 .footerTop > .site_go {
         float: none;
     }
     .ie9 .subTab li, .ie10 .subTab li {

@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
 /* 구글아이콘 */
-@import url('/portfolio/minwon_police/css/IE_minwon_police.css');
+@import url('/ezIHK/minwon_police/css/IE_minwon_police.css');
 /* IE cross browsing */
 * {
     font-family: 'Noto Sans KR', sans-serif;
@@ -106,13 +106,13 @@ header {
     width: 20px;
     height: 15px;
     display: inline-block;
-    background: url(/portfolio/minwon_police/img/경찰민원아이콘/zoomIn.png) no-repeat;
+    background: url(/ezIHK/minwon_police/img/경찰민원아이콘/zoomIn.png) no-repeat;
 }
 .zoomOut {
     width: 20px;
     height: 15px;
     display: inline-block;
-    background: url(/portfolio/minwon_police/img/경찰민원아이콘/zoomOut.png) no-repeat;
+    background: url(/ezIHK/minwon_police/img/경찰민원아이콘/zoomOut.png) no-repeat;
 }
 .header_bottom {
     background: #fff;
@@ -127,7 +127,7 @@ header {
     display: block;
     width: 182px;
     height: 34px;
-    background: url(/portfolio/minwon_police/img/logo.png) no-repeat;
+    background: url(/ezIHK/minwon_police/img/logo.png) no-repeat;
 }
 .hamburger {
     display: none;
@@ -186,7 +186,7 @@ header {
     content: "";
     width: 50%;
     height: 420px;
-    background: url(/portfolio/minwon_police/img/subBg.png) no-repeat center / contain;
+    background: url(/ezIHK/minwon_police/img/subBg.png) no-repeat center / contain;
     opacity: 0.1;
     position: absolute;
     right: 0;
@@ -243,7 +243,7 @@ header {
 .topBanner {
     height: 260px;
     margin-top: 118px;
-    background: url(/portfolio/minwon_police/img/subImg.png) no-repeat center / cover;
+    background: url(/ezIHK/minwon_police/img/subImg.png) no-repeat center / cover;
 }
 .topBanner .inner {
     height: 100%;
@@ -267,7 +267,7 @@ header {
     display: inline-block;
     width: 23px;
     height: 19px;
-    background: url(/portfolio/minwon_police/img/경찰민원아이콘/checkIcon.svg) no-repeat;
+    background: url(/ezIHK/minwon_police/img/경찰민원아이콘/checkIcon.svg) no-repeat;
 }
 .search > p {
     font-size: 18px;
@@ -297,7 +297,7 @@ header {
     width: 20px;
     height: 20px;
     color: #585858;
-    background: url(/portfolio/minwon_police/img/경찰민원아이콘/searchGray.svg) no-repeat;
+    background: url(/ezIHK/minwon_police/img/경찰민원아이콘/searchGray.svg) no-repeat;
     background-size: cover;
     image-rendering: -webkit-optimize-contrast;
 }
@@ -327,7 +327,7 @@ aside > .sideMenu > li.on {
 }
 aside > .sideMenu > li.on > a {
     color: #fff;
-}   
+}
 aside > .sideMenu > li > a {
     display: inline-block;
     font-size: 18px;
@@ -464,7 +464,7 @@ aside > .sideMenu > li > a {
     color: #fff;
 }
 .contentsBt a:last-child {
-    border: 1px solid  #585858;
+    border: 1px solid #585858;
     color: #000;
 }
 .contents .context {
@@ -549,7 +549,7 @@ aside > .sideMenu > li > a {
     position: absolute;
     right: -34px;
     bottom: 40px;
-}   
+}
 .infoBox > .cir span {
     display: block;
     font-size: 12px;

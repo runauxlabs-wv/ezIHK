@@ -37,7 +37,7 @@ a {
     position: absolute;
     top: 0;
     right: 0;
-    background: url(/portfolio/img/Rectangle8.svg) no-repeat;
+    background: url(/ezIHK/img/Rectangle8.svg) no-repeat;
     image-rendering: pixelated;
 }
 .sec1 .inner {
@@ -142,23 +142,23 @@ h2 {
 .talk01 {
     width: 436px;
     height: 176px;
-    background: url(/portfolio/img/talk.svg) no-repeat center / cover;
+    background: url(/ezIHK/img/talk.svg) no-repeat center / cover;
 }
 .talk02 {
     width: 498px;
     height: 176px;
-    background: url(/portfolio/img/talk2.svg) no-repeat center / cover;
+    background: url(/ezIHK/img/talk2.svg) no-repeat center / cover;
     margin-left: 200px;
 }
 .talk03 {
     width: 566px;
     height: 176px;
-    background: url(/portfolio/img/talk3.svg) no-repeat center / cover;
+    background: url(/ezIHK/img/talk3.svg) no-repeat center / cover;
 }
 .talk04 {
     width: 386px;
     height: 176px;
-    background: url(/portfolio/img/talk4.svg) no-repeat center / cover;
+    background: url(/ezIHK/img/talk4.svg) no-repeat center / cover;
     margin-left: 300px;
 }
 .talkWrap .talk {
@@ -167,16 +167,16 @@ h2 {
     cursor: pointer;
 }
 .talkWrap .talk01:hover {
-    background: url(/portfolio/img/talk_1.svg) no-repeat center / cover;
+    background: url(/ezIHK/img/talk_1.svg) no-repeat center / cover;
 }
 .talkWrap .talk02:hover {
-    background: url(/portfolio/img/talk_2.svg) no-repeat center / cover;
+    background: url(/ezIHK/img/talk_2.svg) no-repeat center / cover;
 }
 .talkWrap .talk03:hover {
-    background: url(/portfolio/img/talk_3.svg) no-repeat center / cover;
+    background: url(/ezIHK/img/talk_3.svg) no-repeat center / cover;
 }
 .talkWrap .talk04:hover {
-    background: url(/portfolio/img/talk_4.svg) no-repeat center / cover;
+    background: url(/ezIHK/img/talk_4.svg) no-repeat center / cover;
 }
 .talkWrap .talk:hover {
     transform: scale(1.1);
@@ -205,16 +205,16 @@ h2 {
     align-items: center;
 }
 .sec3 .projectA {
-    background: url(/portfolio/img/projectBg1.jpg) no-repeat center / cover;
+    background: url(/ezIHK/img/projectBg1.jpg) no-repeat center / cover;
 }
 .sec3 .projectB {
-    background: url(/portfolio/img/projectBg2.jpg) no-repeat center / cover;
+    background: url(/ezIHK/img/projectBg2.jpg) no-repeat center / cover;
 }
 .sec3 .projectC {
-    background: url(/portfolio/img/projectBg3.jpg) no-repeat center / cover;
+    background: url(/ezIHK/img/projectBg3.jpg) no-repeat center / cover;
 }
 .sec3 .projectD {
-    background: url(/portfolio/img/projectBg4.jpg) no-repeat center / cover;
+    background: url(/ezIHK/img/projectBg4.jpg) no-repeat center / cover;
 }
 .project .inner {
     display: flex;
@@ -342,22 +342,22 @@ h2 {
     font-size: 12px;
 }
 .typography .fontImg1 {
-    background: url(/portfolio/img/notoSansKR.png) no-repeat center / cover;
+    background: url(/ezIHK/img/notoSansKR.png) no-repeat center / cover;
 }
 .typography .fontImg2 {
-    background: url(/portfolio/img/notoSans.png) no-repeat center / cover;
+    background: url(/ezIHK/img/notoSans.png) no-repeat center / cover;
 }
 .typography .fontImg3 {
-    background: url(/portfolio/img/roboto.png) no-repeat center / cover;
+    background: url(/ezIHK/img/roboto.png) no-repeat center / cover;
 }
 .typography .fontImg4 {
-    background: url(/portfolio/img/ScheherazadeNew.png) no-repeat center / cover;
+    background: url(/ezIHK/img/ScheherazadeNew.png) no-repeat center / cover;
 }
 .typography .fontImg5 {
-    background: url(/portfolio/img/notoSerifKR.png) no-repeat center / cover;
+    background: url(/ezIHK/img/notoSerifKR.png) no-repeat center / cover;
 }
 .typography .fontImg6 {
-    background: url(/portfolio/img/PTSerif.png) no-repeat center / cover;
+    background: url(/ezIHK/img/PTSerif.png) no-repeat center / cover;
 }
 .crossBrowsing .browser {
     width: 40px;
@@ -367,16 +367,16 @@ h2 {
     margin-right: 5px;
 }
 .crossBrowsing .browser1 {
-    background: url(/portfolio/img/Google_Chrome_ICON.png) no-repeat center / cover;
+    background: url(/ezIHK/img/Google_Chrome_ICON.png) no-repeat center / cover;
 }
 .crossBrowsing .browser2 {
-    background: url(/portfolio/img/Firefox_ICON.png) no-repeat center / cover;
+    background: url(/ezIHK/img/Firefox_ICON.png) no-repeat center / cover;
 }
 .crossBrowsing .browser3 {
-    background: url(/portfolio/img/Microsoft_Edge_ICON.png) no-repeat center / cover;
+    background: url(/ezIHK/img/Microsoft_Edge_ICON.png) no-repeat center / cover;
 }
 .crossBrowsing .browser4 {
-    background: url(/portfolio/img/Internet_Explorer_ICON.png) no-repeat center / cover;
+    background: url(/ezIHK/img/Internet_Explorer_ICON.png) no-repeat center / cover;
 }
 .project .device {
     width: 810px;
@@ -384,22 +384,22 @@ h2 {
     image-rendering: pixelated;
 }
 .projectA .device {
-    background: url(/portfolio/img/lulu.png) no-repeat center / cover;
+    background: url(/ezIHK/img/lulu.png) no-repeat center / cover;
 }
 .projectB .device {
-    background: url(/portfolio/img/minwon.png) no-repeat center / cover;
+    background: url(/ezIHK/img/minwon.png) no-repeat center / cover;
 }
 .projectC .device {
-    background: url(/portfolio/img/woojeong.png) no-repeat center / cover;
+    background: url(/ezIHK/img/woojeong.png) no-repeat center / cover;
 }
 .projectD .device {
-    background: url(/portfolio/img/santamaria.png) no-repeat center / cover;
+    background: url(/ezIHK/img/santamaria.png) no-repeat center / cover;
 }
 .sec4::before {
     width: 1920px;
     height: 582px;
     content: "";
-    background: url(/portfolio/img/Vector1.svg) no-repeat center / cover;
+    background: url(/ezIHK/img/Vector1.svg) no-repeat center / cover;
     image-rendering: pixelated;
     position: absolute;
     left: 0;
@@ -454,7 +454,7 @@ h2 {
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
     width: 900px;
     height: 1436px;
-    background: url(/portfolio/img/Group25.png) no-repeat;
+    background: url(/ezIHK/img/Group25.png) no-repeat;
     image-rendering: pixelated;
 }
 .background.show .modal {
@@ -465,4 +465,3 @@ h2 {
 .scrollLock {
     overflow: hidden;
 }
-

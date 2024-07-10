@@ -137,7 +137,7 @@ body {
 .logo {
     width: 166px;
     height: 29px;
-    background: url(/portfolio/minwon_police/img/logo.png) no-repeat center / cover;
+    background: url(/ezIHK/minwon_police/img/logo.png) no-repeat center / cover;
 }
 .main {
     height: 580px;
@@ -203,14 +203,14 @@ h2 {
 }
 .contents > .conBox > li:nth-child(4) {
     margin-right: 20px;
-}  
+}
 .contents > .conBox > li > a {
     padding: 10px;
     font-size: 14px;
     line-height: 1.6;
 }
 .articleWrap {
-    flex:none;
+    flex: none;
     padding-bottom: 25px;
 }
 .article > .inner {

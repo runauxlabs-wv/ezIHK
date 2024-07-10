@@ -38,21 +38,21 @@
 .ie9 .close {
     width: 24px;
     height: 24px;
-    background: url(/portfolio/lululemon/img/icon/close.png) no-repeat center / cover;
+    background: url(/ezIHK/lululemon/img/icon/close.png) no-repeat center / cover;
 }
 /* -------------header----------------- */
 .ie9 .moreView .material-icons-outlined,
 .ie9 .moreBt .material-icons-outlined {
     width: 6px;
     height: 10px;
-    background: url(/portfolio/lululemon/img/icon/right.svg) no-repeat;
+    background: url(/ezIHK/lululemon/img/icon/right.svg) no-repeat;
 }
 .ie9 .moreBt .material-icons-outlined {
-    background: url(/portfolio/lululemon/img/icon/rightB.svg) no-repeat center / cover;
+    background: url(/ezIHK/lululemon/img/icon/rightB.svg) no-repeat center / cover;
     margin-left: 5px;
 }
 .ie9 .moreBt:hover .material-icons-outlined {
-    background: url(/portfolio/lululemon/img/icon/right.svg) no-repeat;
+    background: url(/ezIHK/lululemon/img/icon/right.svg) no-repeat;
 }
 .ie9 .news > .inner > .banner {
     height: auto;
@@ -98,12 +98,12 @@
 .is-ie .news .swiper-button-next {
     width: 19px;
     height: 33px;
-    background: url(/portfolio/lululemon/img/icon/slideIcon2.svg) no-repeat;
+    background: url(/ezIHK/lululemon/img/icon/slideIcon2.svg) no-repeat;
 }
 .is-ie .news .swiper-button-prev {
     width: 19px;
     height: 33px;
-    background: url(/portfolio/lululemon/img/icon/slideIcon.svg) no-repeat;
+    background: url(/ezIHK/lululemon/img/icon/slideIcon.svg) no-repeat;
 }
 .is-ie .banner > .text_ba > .news {
     display: block;
@@ -160,21 +160,21 @@
 }
 /* ------------- brandstory tab1 ----------------- */
 .is-ie .socialImpact_wrap > .socialImpact_img1 {
-    background: url(/portfolio/lululemon/img/brandstory/KR_social_impact_hero.jpg) no-repeat;
+    background: url(/ezIHK/lululemon/img/brandstory/KR_social_impact_hero.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .is-ie .socialImpact_wrap > .socialImpact_img2 {
-    background: url(/portfolio/lululemon/img/brandstory/HtB-header-hero.jpg) no-repeat;
+    background: url(/ezIHK/lululemon/img/brandstory/HtB-header-hero.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .is-ie .hereToBe_img1 {
-    background: url(/portfolio/lululemon/img/brandstory/NA_May2021_IDEA_Commitments_1_1_md_Masonry_D.jpg) 50% 50% no-repeat;
+    background: url(/ezIHK/lululemon/img/brandstory/NA_May2021_IDEA_Commitments_1_1_md_Masonry_D.jpg) 50% 50% no-repeat;
     background-size: cover;
 }
 .is-ie .hereToBe_img2 {
-    background: url(/portfolio/lululemon/img/brandstory/NA_May2021_IDEA_Progress_1_1_md_Masonry_D.jpg) 50% 50% no-repeat;
+    background: url(/ezIHK/lululemon/img/brandstory/NA_May2021_IDEA_Progress_1_1_md_Masonry_D.jpg) 50% 50% no-repeat;
     background-size: cover;
 }
 .ie9 .socialImpact_wrap {
@@ -312,7 +312,7 @@
 .ie9 .footer_left > .logo,
 .ie9 .footer_txt,
 .ie9 .footer_left,
-.ie9 .footer_txt > ul >li,
+.ie9 .footer_txt > ul > li,
 .ie9 .footer_right > .sns li {
     float: left;
 }
@@ -342,7 +342,7 @@
     margin-left: 35px;
 }
 @media screen and (max-width:1499px) {
-	.ie9 .nav {
+    .ie9 .nav {
         transform: translateX(100%);
         top: 0;
     }
@@ -511,7 +511,7 @@
         width: 100%;
     }
     .ie9 .ceoComment > .ceo_txt {
-        position:static;
+        position: static;
     }
     .is-ie .benefitWrap > div {
         width: 100%;

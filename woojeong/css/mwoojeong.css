@@ -179,7 +179,7 @@ h2 {
     word-break: keep-all;
 }
 .section3 .textWrap > p br {
-    display: none;   
+    display: none;
 }
 .section3 .textWrap .moreView, .slideBox .moreView,
 .section4 .textWrap .moreView {
@@ -300,7 +300,7 @@ footer .textWrap > p:first-child {
 }
 .hamberger {
     display: inline-block;
-    background: url(/portfolio/woojeong/img/sort.svg) no-repeat center / cover;
+    background: url(/ezIHK/woojeong/img/sort.svg) no-repeat center / cover;
     width: 40px;
     height: 42px;
 }
